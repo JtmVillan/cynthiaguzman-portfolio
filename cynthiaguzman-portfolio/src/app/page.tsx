@@ -70,7 +70,7 @@ const experience = {
 
 const projects = {
   content: (
-    <div className="mx-auto px-6">
+    <div className="mx-auto px-6 py-9">
       <div className="text-center py-9">
         <h1 className="text-5xl font-bold">Projects</h1>
       </div>
@@ -82,7 +82,7 @@ const projects = {
                 <h2 className="card-title">
                   <a className="link link-hover">3D Printed Embouchure Device for Woodwind Musicians</a>
                 </h2>
-                <p>Assistive device to support the creation of the embouchure for a patient with partial facialy palsy</p>
+                <p>Assistive device to create embouchure for partial facialy palsy</p>
                 <div className="card-actions justify-end">
                   <div className="badge badge-outline">Student Team</div> 
                 </div>
@@ -110,7 +110,7 @@ const projects = {
                 <h2 className="card-title">
                   <a className="link link-hover">Laparoscopic Training Device</a>
                 </h2>
-                <p>​The goal of this project was to improve a low-cost laparoscopic training device created by the Morimoto Lab.</p>
+                <p>​Improveed low-cost laparoscopic training device created by the Morimoto Lab.</p>
                 <div className="card-actions justify-end">
                   <div className="badge badge-outline">Student Team</div> 
                 </div>
