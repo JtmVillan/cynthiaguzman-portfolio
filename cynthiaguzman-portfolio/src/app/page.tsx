@@ -1,10 +1,3 @@
-// import Image from 'next/image'
-import Link from "next/link";
-// import GetPostMetaData from "../../components/GetPostMetaData";
-// import PostPreview from "../../components/PostPreview";
-
-// export default function Home() {
-
 const hero = {
   content: (
     <div className="hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
@@ -40,143 +33,104 @@ const about = {
 
 const experience = {
     content: (
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        <li>
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-start md:text-end mb-10">
-            <time className="font-mono italic">1984</time>
-            <div className="text-lg font-black">First Macintosh computer</div>
-            The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse.
-          </div>
-          <hr/>
-        </li>
-        <li>
-          <hr />
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-end mb-10">
-            <time className="font-mono italic">1998</time>
-            <div className="text-lg font-black">iMac</div>
-            iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has been the primary part of Apple's consumer desktop offerings since its debut in August 1998, and has evolved through seven distinct forms
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-start md:text-end mb-10">
-            <time className="font-mono italic">2001</time>
-            <div className="text-lg font-black">iPod</div>
-            The iPod is a discontinued series of portable media players and multi-purpose mobile devices designed and marketed by Apple Inc. The first version was released on October 23, 2001, about 8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450 million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At over 20 years, the iPod brand is the oldest to be discontinued by Apple
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-end mb-10">
-            <time className="font-mono italic">2007</time>
-            <div className="text-lg font-black">iPhone</div>
-            iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-start md:text-end mb-10">
-            <time className="font-mono italic">2015</time>
-            <div className="text-lg font-black">Apple Watch</div>
-            The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness tracking, health-oriented capabilities, and wireless telecommunication, and integrates with iOS and other Apple products and services
-          </div>
-        </li>
-      </ul>
+      <div className="mx-auto px-40">
+        <div className="text-center py-9">
+          <h1 className="text-5xl font-bold">Experience</h1>
+        </div>
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <li id="work-1">
+            <div className="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>
+            <div className="timeline-start md:text-end mb-10">
+              <time className="font-mono italic">20__</time>
+              <div className="text-lg font-black">Most Recent Work</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedita illum harum aspernatur beatae, aliquam numquam velit animi suscipit consequuntur libero alias nemo, ea voluptas impedit delectus? Quos, tempora quia?
+            </div>
+            <hr/>
+          </li>
+          <li id="work-2">
+            <hr />
+            <div className="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>
+            <div className="timeline-end mb-10">
+              <time className="font-mono italic">20__</time>
+              <div className="text-lg font-black">Older Work</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam doloribus voluptatibus, quisquam est quibusdam dolor, nesciunt nihil placeat molestiae hic dignissimos numquam amet. Recusandae maxime facere laboriosam voluptate necessitatibus.
+            </div>
+            <hr />
+          </li>
+        </ul>
+      </div>
+      
+      
     ),
 };
 
 const projects = {
   content: (
     <div className="mx-auto px-6">
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4" >
-
-        <div id="project-1" className="mx-auto">
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div> 
-                <div className="badge badge-outline">Products</div>
+      <div className="text-center py-9">
+        <h1 className="text-5xl font-bold">Projects</h1>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div id="project-music" className="mx-auto">
+            <div className="card w-96 bg-base-100 shadow-xl">
+              <figure><img className="h-48 w-96" src="https://i.imgur.com/vpQEhrGm.png" alt="music-device" /></figure>
+              <div className="card-body">
+                <h2 className="card-title">
+                  <a className="link link-hover">3D Printed Embouchure Device for Woodwind Musicians</a>
+                </h2>
+                <p>Assistive device to support the creation of the embouchure for a patient with partial facialy palsy</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">Student Team</div> 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div id="project-2" className="mx-auto">
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div> 
-                <div className="badge badge-outline">Products</div>
+          <div id="project-fish" className="mx-auto">
+            <div className="card w-96 bg-base-100 shadow-xl ">
+              <figure><img className="h-48 w-96" src="https://i.imgur.com/xsn7jFym.png" alt="fish-robot" /></figure>
+              <div className="card-body">
+                <h2 className="card-title">
+                  <a className="link link-hover">Biomimetic Swimming Robot</a>
+                </h2>
+                <p>Robot with a compliant tail, using a wheel and wire mechanism to change its curvature</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">Student Team</div> 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div id="project-3" className="mx-auto">
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div> 
-                <div className="badge badge-outline">Products</div>
+          <div id="project-lapar" className="mx-auto">
+            <div className="card w-96 bg-base-100 shadow-xl ">
+            <figure><img className="h-48 w-96" src="https://i.imgur.com/FJnhxeIm.png" alt="lapar-device" /></figure>
+              <div className="card-body">
+                <h2 className="card-title">
+                  <a className="link link-hover">Laparoscopic Training Device</a>
+                </h2>
+                <p>​The goal of this project was to improve a low-cost laparoscopic training device created by the Morimoto Lab.</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">Student Team</div> 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div id="project-4" className="mx-auto">
-          <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div> 
-                <div className="badge badge-outline">Products</div>
+          <div id="project-football" className="mx-auto">
+            <div className="card w-96 bg-base-100 shadow-xl ">
+              <figure><img className="h-48 w-96" src="https://i.imgur.com/VsAj9cUm.png" alt="football-device" /></figure>
+              <div className="card-body">
+                <h2 className="card-title">
+                  <a className="link link-hover">Football Launcher</a>
+                </h2>
+                <p>Contraption capable of launching a football 99 yards.</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">Student Team</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
       </div>
     </div>
   ),
@@ -191,10 +145,13 @@ const HomePage = () => {
   // return <div className="grid grid-cols-1 md:grid-cols-2 gap-4" >{postPreviews}</div>;
   return (
     <>
-      <div>{hero.content}</div>
-      <div>{about.content}</div>
-      <div>{experience.content}</div>
-      <div>{projects.content}</div>
+      <div>
+        <div>{hero.content}</div>
+        <div>{about.content}</div>
+        <div>{experience.content}</div>
+        <div>{projects.content}</div>
+      </div>
+      
     </>
     
   );
