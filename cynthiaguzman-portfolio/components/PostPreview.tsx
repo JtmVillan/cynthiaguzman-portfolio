@@ -6,7 +6,7 @@ const PostPreview = (props: PostMetaData) => {
       <div className="mx-auto px-20 py-9 bg-base-200">
           <div className="mx-auto">
             <div className="card w-96 bg-base-100 shadow-xl">
-              <figure><img className="h-48 w-96" src={props.thumbnail} alt="music-device" /></figure>
+              <figure><img className="h-48 w-96" src={props.thumbnail} alt="project-device" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
                   <Link href={`/projects/${props.slug}`}>

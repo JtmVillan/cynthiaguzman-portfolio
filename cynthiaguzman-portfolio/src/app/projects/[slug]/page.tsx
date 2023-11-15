@@ -24,8 +24,8 @@ const PostPage = (props: any) => {
     const post = getPostContent(slug); // display (unstyled) content of posts
     return (
         <div className="bg-base-200">
-            <div className="mb-8 text-center">
-              <h1 className="font-bold text-4xl" >{post.data.title}</h1>
+            <div className="mb-8 text-center py-9">
+              <h1 className="font-bold text-4xl">{post.data.title}</h1>
             </div>
 
             <article className="prose mx-auto my-9">

@@ -20,7 +20,8 @@ export default function RootLayout({
 }) {
 
   const header = (
-      <div className="navbar bg-base-100 fixed overflow-hidden z-10">
+      // <div className="navbar bg-base-100 fixed overflow-hidden z-10">
+      <div className="navbar bg-base-100 ">
         <div className="flex-1">
           <Link href="/">
             <h1 className="btn btn-ghost text-xl">Cynthia Guzman</h1>
