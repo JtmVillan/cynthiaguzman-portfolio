@@ -4,6 +4,7 @@ import Link from 'next/link'
 import './globals.css'
 import Image from "next/image";
 import React from 'react';
+// import { Link, animateScroll as scroll, Element } from 'react-scroll';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,34 +20,22 @@ export default function RootLayout({
 }) {
 
   const header = (
-    <div className="navbar bg-base-100">
-      <div className="flex-1">
-        <Link href="/">
-          <h1 className="btn btn-ghost text-xl">Cynthia Guzman</h1>
-        </Link>
-        
+      <div className="navbar bg-base-100 fixed overflow-hidden z-10">
+        <div className="flex-1">
+          <Link href="/">
+            <h1 className="btn btn-ghost text-xl">Cynthia Guzman</h1>
+          </Link>
+          
+        </div>
+        <div className="flex-none">
+          <ul className="menu menu-horizontal px-1">
+            <li><Link href="/#home" scroll={false}>Home</Link></li>
+            <li><Link href="/#about" scroll={false}>About Me</Link></li>
+            <li><Link href="/#experience" scroll={false}>Experience</Link></li>
+            <li><Link href="/#projects" scroll={false}>Projects</Link></li>
+          </ul>
+        </div>
       </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About Me</a></li>
-          <li><a>Experience</a></li>
-          <li>
-            <details>
-              <summary>
-                Projects
-              </summary>
-              <ul className="p-2 bg-base-100">
-                <li><a href="">3D Printed Embouchure Device for Woodwind Musicians</a></li>
-                <li><a href="">Biomimetic Swimming Robot</a></li>
-                <li><a href="">Laparoscopic Training Device</a></li>
-                <li><a href=""></a>Football Launcher</li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </div>
-    </div>
   );
 
   const footer = (
@@ -66,7 +55,7 @@ export default function RootLayout({
     
   return (
     <html lang="en">
-      <div className="mx-auto bg-base-200">
+      <div className="mx-auto bg-base-200 ">
         {header}
         {children}
         {footer}

@@ -1,15 +1,23 @@
 import GetPostMetaData from "../../components/GetPostMetaData";
 import PostPreview from "../../components/PostPreview";
+import Link from 'next/link'
 
 const hero = {
   content: (
     <div className="hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
+        <div className="max-w-md text-center">
           <h1 className="mb-5 text-5xl font-bold">Cynthia Guzman</h1>
           <p className="mb-5">Mechanical Engineer</p>
-          <button className="btn btn-primary">Get Started</button>
+          <div className="flex justify-center">
+            <Link href="#about">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+                <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z" clip-rule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -36,7 +44,7 @@ const about = {
 
 const experience = {
     content: (
-      <div className="mx-auto px-40 bg-base-300">
+      <div className="mx-auto px-40 py-24 bg-base-300">
         <div className="text-center py-9">
           <h1 className="text-5xl font-bold">Experience</h1>
         </div>
@@ -66,77 +74,7 @@ const experience = {
           </li>
         </ul>
       </div>
-      
-      
     ),
-};
-
-const projects = {
-  content: (
-    <div className="mx-auto px-20 py-9 bg-base-400">
-      <div className="text-center py-9">
-        <h1 className="text-5xl font-bold">Projects</h1>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div id="project-music" className="mx-auto">
-            <div className="card w-96 bg-base-100 shadow-xl">
-              <figure><img className="h-48 w-96" src="https://i.imgur.com/vpQEhrGm.png" alt="music-device" /></figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  <a className="link link-hover">3D Printed Embouchure Device for Woodwind Musicians</a>
-                </h2>
-                <p>Assistive device to create embouchure for partial facialy palsy</p>
-                <div className="card-actions justify-start">
-                  <div className="badge badge-outline">Student Team</div> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="project-fish" className="mx-auto">
-            <div className="card w-96 bg-base-100 shadow-xl ">
-              <figure><img className="h-48 w-96" src="https://i.imgur.com/xsn7jFym.png" alt="fish-robot" /></figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  <a className="link link-hover">Biomimetic Swimming Robot</a>
-                </h2>
-                <p>Robot with a compliant tail, using a wheel and wire mechanism to change its curvature</p>
-                <div className="card-actions justify-start">
-                  <div className="badge badge-outline">Student Team</div> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="project-lapar" className="mx-auto">
-            <div className="card w-96 bg-base-100 shadow-xl ">
-            <figure><img className="h-48 w-96" src="https://i.imgur.com/FJnhxeIm.png" alt="lapar-device" /></figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  <a className="link link-hover">Laparoscopic Training Device</a>
-                </h2>
-                <p>​Improveed low-cost laparoscopic training device created by the <a href="https://morimotolab.eng.ucsd.edu/" className="link link-hover">Morimoto Lab</a>.</p>
-                <div className="card-actions justify-start">
-                  <div className="badge badge-outline">Student Team</div> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="project-football" className="mx-auto">
-            <div className="card w-96 bg-base-100 shadow-xl ">
-              <figure><img className="h-48 w-96" src="https://i.imgur.com/VsAj9cUm.png" alt="football-device" /></figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  <a className="link link-hover">Football Launcher</a>
-                </h2>
-                <p>Contraption capable of launching a football 99 yards.</p>
-                <div className="card-actions justify-start">
-                  <div className="badge badge-outline">Student Team</div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  ),
 };
 
 const HomePage = () => {
@@ -147,11 +85,11 @@ const HomePage = () => {
 
   return (
     <>
-      <div>
-        <div>{hero.content}</div>
-        <div>{about.content}</div>
-        <div>{experience.content}</div>
-        <div className="mx-auto px-20 py-9 bg-base-200">
+      <div className="">
+        <div id="home">{hero.content}</div>
+        <div id="about">{about.content}</div>
+        <div id="experience">{experience.content}</div>
+        <div id="projects" className="mx-auto px-20 py-24 bg-base-200">
           <div className="text-center py-9">
             <h1 className="text-5xl font-bold">Projects</h1>
           </div>
