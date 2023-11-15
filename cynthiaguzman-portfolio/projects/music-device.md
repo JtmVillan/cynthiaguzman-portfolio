@@ -51,19 +51,24 @@ In order to see how much pressure is required to play the saxophone, we measured
 <div> 
     <div>
         <h3>Patient Playing without a Device</h3>
-        <iframe width="600" height="400" src="https://drive.google.com/file/d/1e71TYg2zZhPJPVs3CJEeabJWWd0pkspX/view?usp=sharing">
+        <iframe width="600" height="400" src="https://drive.google.com/file/d/1e71TYg2zZhPJPVs3CJEeabJWWd0pkspX/view?usp=share_link">
     </div>
     <div>
         <h3>Patient Playing with Final Device</h3>
         <iframe width="600" height="400" src="https://drive.google.com/file/d/1vhlnbmqRhlCq4zPOzq7OLvRDFH6dAjTl/view?usp=sharing">
     </div>
+    <div>
+        <h3>Jared Test</h3>
+        <iframe width="600" height="400" src="https://drive.google.com/file/d/1nbupbCcN0lGoQDQ3o3WaRNNh1sSYItUd/view?usp=share_link">
+    </div>
+    
 </div>
 
 ## Documents
 <div class="container" style=""> 
     <div style="">
         <h3>Final Project Research Paper</h3>
-        <iframe width="400" height="500" src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/view?usp=sharing">
+        <iframe width="400" height="500" src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/view?usp=share_link">
     </div>
     <div style="">
         <h3>Final Project Poster</h3>
@@ -76,6 +81,10 @@ In order to see how much pressure is required to play the saxophone, we measured
     <div style="">
         <h3>Individual Component Analysis: Model Generation</h3>
         <iframe width="400" height="500" src="https://drive.google.com/file/d/1SKNHbyCQIwhDukB2Fgnu0IULZ98NA_DW/view?usp=sharing">
+    </div>
+    <div style="">
+        <h3>Jared Test</h3>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT2zTUbTZGMoiW8wkR0gxj_9s2FtaOBvmI9_OGTq3pLhtsheZRer8_SC2wRFFk9LtTBuRncksqDx6sT/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
 </div>
 

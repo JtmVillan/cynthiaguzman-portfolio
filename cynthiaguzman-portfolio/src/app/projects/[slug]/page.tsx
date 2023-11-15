@@ -18,16 +18,14 @@ export const generateStaticParams = async () => {
     }));
 };
 
-// props parameter captures input
 const PostPage = (props: any) => {
-    const slug = props.params.slug; // this param is whatever is in the []
-    const post = getPostContent(slug); // display (unstyled) content of posts
+    const slug = props.params.slug;
+    const post = getPostContent(slug);
     return (
         <div className="bg-base-200">
             <div className="mb-8 text-center py-9">
               <h1 className="font-bold text-4xl">{post.data.title}</h1>
             </div>
-
             <article className="prose mx-auto my-9">
                 <Markdown>{post.content}</Markdown>
             </article>

@@ -1,6 +1,6 @@
+import Link from "next/link";
 import GetPostMetaData from "../../components/GetPostMetaData";
 import PostPreview from "../../components/PostPreview";
-import Link from 'next/link'
 
 const hero = {
   content: (
@@ -17,7 +17,6 @@ const hero = {
               </svg>
             </Link>
           </div>
-          
         </div>
       </div>
     </div>
@@ -31,10 +30,13 @@ const about = {
         <img src="https://i.imgur.com/gBAboXp.png" className="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <h1 className="text-5xl font-bold">Hey I'm Cynthia!</h1>
-          <p className="py-6">B.S Mechanical Engineering with a Specialization in Robotics and Controls.</p>
-          <p>I'm a recent graduate from UC San Diego.
+          <p className="py-6">
+            B.S Mechanical Engineering with a Specialization in Robotics and Controls.</p>
+          <p>
+            I'm a recent graduate from UC San Diego.
           </p>
-          <p>Some of my hobbies include crocheting and roller skating.
+          <p>
+            Some of my hobbies include crocheting and roller skating.
           </p>
         </div>
       </div>
@@ -42,6 +44,7 @@ const about = {
   ),
 };
 
+// TODO: FILL WITH REAL EXPERIENCE
 const experience = {
     content: (
       <div className="mx-auto px-40 py-24 bg-base-300">
@@ -84,30 +87,18 @@ const HomePage = () => {
   ));
 
   return (
-    <>
-      <div className="">
-        <div id="home">{hero.content}</div>
-        <div id="about">{about.content}</div>
-        <div id="experience">{experience.content}</div>
-        <div id="projects" className="mx-auto px-20 py-24 bg-base-200">
-          <div className="text-center py-9">
-            <h1 className="text-5xl font-bold">Projects</h1>
-          </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" >{postPreviews}</div>
-          </div>
-      </div>
-    </>
+    <div>
+      <div id="home">{hero.content}</div>
+      <div id="about">{about.content}</div>
+      <div id="experience">{experience.content}</div>
+      <div id="projects" className="mx-auto px-20 py-24 bg-base-200">
+        <div className="text-center py-9">
+          <h1 className="text-5xl font-bold">Projects</h1>
+        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">{postPreviews}</div>
+        </div>
+    </div>
   );
-  // return (
-  //   <>
-  //     <div>
-  //       <div>{hero.content}</div>
-  //       <div>{about.content}</div>
-  //       <div>{experience.content}</div>
-  //       <div>{projects.content}</div>
-  //     </div>
-  //   </>
-  // );
 };
 
 export default HomePage;
