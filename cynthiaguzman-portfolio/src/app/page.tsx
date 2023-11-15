@@ -1,3 +1,6 @@
+import GetPostMetaData from "../../components/GetPostMetaData";
+import PostPreview from "../../components/PostPreview";
+
 const hero = {
   content: (
     <div className="hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
@@ -33,7 +36,7 @@ const about = {
 
 const experience = {
     content: (
-      <div className="mx-auto px-40">
+      <div className="mx-auto px-40 bg-base-300">
         <div className="text-center py-9">
           <h1 className="text-5xl font-bold">Experience</h1>
         </div>
@@ -70,7 +73,7 @@ const experience = {
 
 const projects = {
   content: (
-    <div className="mx-auto px-6 py-9">
+    <div className="mx-auto px-20 py-9 bg-base-400">
       <div className="text-center py-9">
         <h1 className="text-5xl font-bold">Projects</h1>
       </div>
@@ -83,7 +86,7 @@ const projects = {
                   <a className="link link-hover">3D Printed Embouchure Device for Woodwind Musicians</a>
                 </h2>
                 <p>Assistive device to create embouchure for partial facialy palsy</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-start">
                   <div className="badge badge-outline">Student Team</div> 
                 </div>
               </div>
@@ -97,7 +100,7 @@ const projects = {
                   <a className="link link-hover">Biomimetic Swimming Robot</a>
                 </h2>
                 <p>Robot with a compliant tail, using a wheel and wire mechanism to change its curvature</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-start">
                   <div className="badge badge-outline">Student Team</div> 
                 </div>
               </div>
@@ -110,8 +113,8 @@ const projects = {
                 <h2 className="card-title">
                   <a className="link link-hover">Laparoscopic Training Device</a>
                 </h2>
-                <p>​Improveed low-cost laparoscopic training device created by the Morimoto Lab.</p>
-                <div className="card-actions justify-end">
+                <p>​Improveed low-cost laparoscopic training device created by the <a href="https://morimotolab.eng.ucsd.edu/" className="link link-hover">Morimoto Lab</a>.</p>
+                <div className="card-actions justify-start">
                   <div className="badge badge-outline">Student Team</div> 
                 </div>
               </div>
@@ -125,7 +128,7 @@ const projects = {
                   <a className="link link-hover">Football Launcher</a>
                 </h2>
                 <p>Contraption capable of launching a football 99 yards.</p>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-start">
                   <div className="badge badge-outline">Student Team</div>
                 </div>
               </div>
@@ -137,24 +140,36 @@ const projects = {
 };
 
 const HomePage = () => {
-  // const postMetaData = GetPostMetaData();
-  // const postPreviews = postMetaData.map((post) => (
-  //   <PostPreview key={post.slug} {...post} />
-  // ));
+  const postMetaData = GetPostMetaData();
+  const postPreviews = postMetaData.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
 
-  // return <div className="grid grid-cols-1 md:grid-cols-2 gap-4" >{postPreviews}</div>;
   return (
     <>
       <div>
         <div>{hero.content}</div>
         <div>{about.content}</div>
         <div>{experience.content}</div>
-        <div>{projects.content}</div>
+        <div className="mx-auto px-20 py-9 bg-base-200">
+          <div className="text-center py-9">
+            <h1 className="text-5xl font-bold">Projects</h1>
+          </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" >{postPreviews}</div>
+          </div>
       </div>
-      
     </>
-    
   );
+  // return (
+  //   <>
+  //     <div>
+  //       <div>{hero.content}</div>
+  //       <div>{about.content}</div>
+  //       <div>{experience.content}</div>
+  //       <div>{projects.content}</div>
+  //     </div>
+  //   </>
+  // );
 };
 
 export default HomePage;

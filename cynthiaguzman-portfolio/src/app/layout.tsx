@@ -21,7 +21,10 @@ export default function RootLayout({
   const header = (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Cynthia Guzman</a>
+        <Link href="/">
+          <h1 className="btn btn-ghost text-xl">Cynthia Guzman</h1>
+        </Link>
+        
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
@@ -63,7 +66,7 @@ export default function RootLayout({
     
   return (
     <html lang="en">
-      <div className="mx-auto bg-slate-200">
+      <div className="mx-auto bg-base-200">
         {header}
         {children}
         {footer}
