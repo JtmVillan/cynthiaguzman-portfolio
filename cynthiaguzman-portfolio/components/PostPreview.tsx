@@ -3,7 +3,7 @@ import { PostMetaData } from "./PostMetaData";
 
 const PostPreview = (props: PostMetaData) => {
     return (
-      <div className="mx-auto py-9 bg-base-200">
+      <div className="mx-auto bg-base-200">
           <div className="mx-auto">
             <div className="card w-96 bg-base-100 shadow-xl">
               <figure><img className="h-48 w-96" src={props.thumbnail} alt="project-device" /></figure>
