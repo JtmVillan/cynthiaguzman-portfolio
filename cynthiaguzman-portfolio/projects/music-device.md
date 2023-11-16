@@ -1,5 +1,5 @@
 ---
-title: "3D Printed Embouchure Device for Woodwind Musicians"
+title: "Embouchure Device"
 subtitle: "Assistive device to create embouchure for partial facialy palsy"
 thumbnail: "https://i.imgur.com/vpQEhrG.png"
 ---
@@ -51,11 +51,14 @@ In order to see how much pressure is required to play the saxophone, we measured
 <div> 
     <div>
         <h3>Patient Playing without a Device</h3>
-        <iframe width="600" height="400" src="https://drive.google.com/file/d/1e71TYg2zZhPJPVs3CJEeabJWWd0pkspX/view?usp=share_link">
+        <video width="600" height="400" controls>
+            <source src="https://youtu.be/jGIqC-Kryp0">
+            Your browser does not support the video tag.
+        </video>
     </div>
     <div>
         <h3>Patient Playing with Final Device</h3>
-        <iframe width="600" height="400" src="https://drive.google.com/file/d/1vhlnbmqRhlCq4zPOzq7OLvRDFH6dAjTl/view?usp=sharing">
+        <iframe width="600" height="400" src="https://youtu.be/jGIqC-Kryp0">
     </div>
     <div>
         <h3>Jared Test</h3>
