@@ -51,8 +51,8 @@ const about = {
 
 const experience = {
     content: (
-      <div className="px-8 pb-16 bg-base-300">
-        <div className="text-center py-16">
+      <div className="px-8 py-16 bg-base-300">
+        <div className="text-center py-8">
           <h1 className="text-5xl font-bold">Experience</h1>
         </div>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -126,31 +126,16 @@ const experience = {
 
 const skills = {
   content: (
-    <div className="bg-base-300">
-      <div className="text-center py-16">
+    <div className="bg-base-300 py-16">
+      <div className="text-center py-8">
           <h1 className="text-5xl font-bold">Skills</h1>
       </div>
 
-      <div className="flex flex-col w-full pb-12 px-10">
-        <div className="flex flex-row justify-center gap-16">
-          <div className="card card-compact w-72 bg-base-100 shadow-xl hover:-translate-y-2 ease-in duration-100">
-            <figure><img src="https://i.imgur.com/gXDtLfNm.png" alt="clock" /></figure>
-            <div className="card-body">
-              <h2 className="card-title">Mechanical Clock</h2>
-            </div>
-          </div>
-          <div className="card card-compact w-72 bg-base-100 shadow-xl hover:-translate-y-2 ease-in duration-100">
-            <figure><img src="https://i.imgur.com/JzGyIQ5m.png" alt="chess" /></figure>
-            <div className="card-body">
-              <h2 className="card-title">Unique Chess Piece</h2>
-            </div>
-          </div>
-        </div>
-
+      <div className="flex flex-col w-full px-10">
         <div className="grid grid-cols-2 p-8 gap-8 content-center justify-center md:mx-36">
           <div className="flex flex-col items-center">
             <span className="p-3 bg-gray-600 inline-block rounded-full bg-opacity-50">
-              <svg className="w-12 h-12 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+              <svg className="w-20 h-20 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
               </svg>
             </span>
@@ -159,7 +144,7 @@ const skills = {
           </div>
           <div className="flex flex-col items-center">
             <span className="p-3 bg-gray-600 inline-block rounded-full bg-opacity-50">
-              <svg className="w-12 h-12 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <svg className="w-20 h-20 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
               </svg>
             </span>
@@ -168,7 +153,7 @@ const skills = {
           </div>
           <div className="flex flex-col items-center">
             <span className="p-3 bg-gray-600 inline-block rounded-full bg-opacity-50">
-              <svg className="w-12 h-12 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+              <svg className="w-20 h-20 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
               </svg>
             </span>
@@ -177,18 +162,55 @@ const skills = {
           </div>
           <div className="flex flex-col items-center">
             <span className="p-3 bg-gray-600 inline-block rounded-full bg-opacity-50">
-              <svg className="w-12 h-12 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <svg className="w-20 h-20 p-3 stroke-current text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
               </svg>
             </span>
             <h3 className="text-lg font-semibold text-center">Programming Languages</h3>
             <div className="text-sm font-neutral-content text-center">Python, MatLab</div>
           </div>
-
         </div>
       </div>
     </div>
     
+  ),
+};
+
+const miniProjects = {
+  content: (
+    <div className="mx-auto">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold"> Mini Projects</h1>
+      </div>
+      <div className="collapse">
+        <input type="checkbox"/>
+        <div className="collapse-title flex justify-center">
+          <div className="ps-6 ">
+            <span className="bg-gray-600 inline-block rounded-full bg-opacity-50">
+              <svg className="w-12 h-12 p-3 stroke-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div className="collapse-content pb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-center place-items-center gap-16">
+            <div className="card card-compact w-72 bg-base-100 shadow-xl hover:-translate-y-2 ease-in duration-100">
+              <figure><img src="https://i.imgur.com/gXDtLfNm.png" alt="clock" /></figure>
+              <div className="card-body">
+                <h2 className="card-title">Mechanical Clock</h2>
+              </div>
+            </div>
+            <div className="card card-compact w-72 bg-base-100 shadow-xl hover:-translate-y-2 ease-in duration-100">
+              <figure><img src="https://i.imgur.com/JzGyIQ5m.png" alt="chess" /></figure>
+              <div className="card-body">
+                <h2 className="card-title">Unique Chess Piece</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   ),
 };
 
@@ -272,11 +294,12 @@ const HomePage = () => {
       <div id="home">{hero.content}</div>
       <div id="about">{about.content}</div>
       <div id="experience">{experience.content}</div>
-      <div id="projects" className="bg-base-200">
-        <div className="text-center py-16">
+      <div id="projects" className="py-16 bg-base-200">
+        <div className="text-center py-8">
           <h1 className="text-5xl font-bold">Projects</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-16 md:mx-60">{postPreviews}</div>
+        <div>{miniProjects.content}</div>
       </div>
       <div id="skills">{skills.content}</div>
     </main>
