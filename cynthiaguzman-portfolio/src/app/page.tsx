@@ -39,20 +39,18 @@ const hero = {
 
 const about = {
   content: (
-    
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src="https://i.imgur.com/gBAboXp.png" className="w-64 rounded-full shadow-2xl" />
         <div>
-          <div className={prata.className}>
-            <p className="text-7xl font-extrabold text-primary">Cynthia Guzman</p>
+          <div className={lobster.className}>
+            <p className="text-7xl text-primary">Cynthia Guzman</p>
           </div>
-          
           <p className="py-6 text-2xl">
-            B.S <a href="https://mae.ucsd.edu/undergrad" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary 
-            text-primary" target="_blank" rel="noopener noreferrer">Mechanical Engineering </a>with a Specialization in Robotics and Controls.</p>
+            <a href="https://mae.ucsd.edu/undergrad" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary 
+            text-primary" target="_blank" rel="noopener noreferrer">Mechanical Engineer </a>specialized in Robotics and Controls.</p>
           <p className="text-xl">
-            I'm a recent graduate 
+            I recently graduated
             from <a href="https://ucsd.edu/" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary 
             text-primary" target="_blank" rel="noopener noreferrer">UC San Diego</a> with an interest in mechanical 
             design and robotics! During my time at UC San Diego, I've had the chance to work on various research projects and 
@@ -62,6 +60,7 @@ const about = {
           <p className="text-xl">
             In my free time, you can find me crocheting at home or roller skating at my local skate park!
           </p>
+          <Link href="/not-existing-route">Not Found</Link>
         </div>
       </div>
     </div>
