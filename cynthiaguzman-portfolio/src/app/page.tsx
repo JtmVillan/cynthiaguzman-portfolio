@@ -252,7 +252,7 @@ const skills = {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-8 gap-8 content-center justify-center md:mx-36">
         <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-secondary">
+          <span className="p-3 inline-block rounded-full bg-primary">
             <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
             </svg>
@@ -261,7 +261,7 @@ const skills = {
           <div className="text-md text-center">Arduino</div>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-secondary">
+          <span className="p-3 inline-block rounded-full bg-primary">
             <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
             </svg>
@@ -270,7 +270,7 @@ const skills = {
           <div className="text-md text-center">Inventor, SolidWorks, Fusion360</div>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-secondary">
+          <span className="p-3 inline-block rounded-full bg-primary">
             <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
             </svg>
@@ -279,7 +279,7 @@ const skills = {
           <div className="text-md text-center">3D Printing, Soldering, Laser Cutting, GD&T</div>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-secondary">
+          <span className="p-3 inline-block rounded-full bg-primary">
             <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
             </svg>

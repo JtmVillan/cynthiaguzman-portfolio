@@ -23,12 +23,8 @@ Since the goal was to lower cost, I decided to go with a 3D printed design where
 
 There was a lot to consider with this design. I was concerned about it's strength and smoothness. Ideally, we want to mimic the resistance and range of a traditional laparoscopic training device. I had various prototypes with slight changes to the design in order to arrive at the final design shown below.
 
-## Video
-
 <div> 
-    <div>
-        <h3>Live Demo</h3>
-        <iframe width="600" height="400" src="https://drive.google.com/file/d/1nbupbCcN0lGoQDQ3o3WaRNNh1sSYItUd/view?usp=sharing">
-    </div>
+    <h3>Live Demo</h3>
+    <iframe src="https://drive.google.com/file/d/1nbupbCcN0lGoQDQ3o3WaRNNh1sSYItUd/preview" width="640" height="480" allow="autoplay"></iframe>
 </div>
 

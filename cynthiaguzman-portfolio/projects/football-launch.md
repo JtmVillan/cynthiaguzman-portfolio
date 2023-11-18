@@ -16,22 +16,14 @@ For our team, The Double Double, we decided to construct a launching machine tha
 
 I designed the prototype of this using cardboard, paper, a rubber band, a paperclip, chopsticks, and some coins.
 
-## Videos
-<div> 
-    <div>
-        <h3>Final Prototype Video</h3>
-        <iframe width="600" height="400" src="https://drive.google.com/file/d/1tuacsRTvp9xbaDOXvrp3fdyIPBL47FsN/view?usp=sharing">
-    </div>
+<div>
+    <h3>Final Prototype Video</h3>
+    <iframe src="https://drive.google.com/file/d/1tuacsRTvp9xbaDOXvrp3fdyIPBL47FsN/preview" width="640" height="480" allow="autoplay"></iframe>
 </div>
 
-## Documents
-<div class="container" style=""> 
-    <div style="">
-        <h3>Final Report</h3>
-        <iframe width="400" height="500" src="https://drive.google.com/file/d/11hsLrEseqlEey1LrjSI3dP5GPnE1133t/view?usp=sharing">
-    </div>
-    <div style="">
-        <h3>Final Project Presentation</h3>
-        <iframe width="400" height="500" src="https://drive.google.com/file/d/1MyAQBnyi4wWJCKtNXbtphqSQRXPeL80V/view?usp=sharing">
-    </div>
+<div> 
+    <h3>Final Report</h3>
+    <iframe src="https://drive.google.com/file/d/11hsLrEseqlEey1LrjSI3dP5GPnE1133t/preview" width="640" height="480" allow="autoplay"></iframe>
+    <h3>Final Project Presentation</h3>
+    <iframe src="https://drive.google.com/file/d/1MyAQBnyi4wWJCKtNXbtphqSQRXPeL80V/preview" width="640" height="480" allow="autoplay"></iframe>
 </div>

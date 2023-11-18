@@ -90,7 +90,7 @@ export default function RootLayout({
   );
     
   return (
-    <html lang="en" data-theme="mytheme">
+    <html lang="en" data-theme="dark">
       <div className="flex flex-col min-h-screen text-base-content">
         {/* <main className={'${inter.variable} font-sans'}> */}
         <main className={raleway.className}>
