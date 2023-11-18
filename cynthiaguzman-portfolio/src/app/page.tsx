@@ -181,6 +181,8 @@ const experience = {
 const miniProjects = {
   content: (
     <div className="text-center">
+      {/* don't delete below line */}
+       {/* <a role="button" href={`/projects/${props.slug}`} className="btn btn-primary">View Project</a> */}
       <div>
          <h1 className="text-4xl font-extrabold"> Mini Projects</h1>
       </div>
