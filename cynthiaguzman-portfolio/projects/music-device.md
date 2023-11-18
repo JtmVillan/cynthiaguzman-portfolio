@@ -1,7 +1,7 @@
 ---
 title: "Embouchure Device"
 subtitle: "Assistive device to create embouchure for partial facialy palsy"
-thumbnail: "https://i.imgur.com/vpQEhrG.png"
+thumbnail: "https://i.imgur.com/vpQEhrGb.png"
 ---
 
 ![music-device-thumb](https://i.imgur.com/vpQEhrG.png)

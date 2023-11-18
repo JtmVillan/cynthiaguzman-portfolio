@@ -1,7 +1,7 @@
 ---
 title: "Football Launcher"
 subtitle: "Contraption capable of launching a football 99 yards"
-thumbnail: "https://i.imgur.com/VsAj9cUm.png"
+thumbnail: "https://i.imgur.com/VsAj9cUb.png"
 ---
 
 ![fig-1](https://i.imgur.com/MKzso1r.png)

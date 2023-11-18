@@ -1,7 +1,7 @@
 ---
 title: "Biomimetic Swimming Robot"
 subtitle: "Robot with a compliant tail, using a wheel and wire mechanism to change its curvature"
-thumbnail: "https://i.imgur.com/xsn7jFym.png"
+thumbnail: "https://i.imgur.com/xsn7jFyb.png"
 ---
 
 ![fish-3d](https://i.imgur.com/tUVX3BV.png)
@@ -37,16 +37,16 @@ We did initial testings of our robot in air by collecting spatial data on the ta
 </div>
 
 ## Documents
-<div class="container" style=""> 
-    <div style="">
+<div class="container"> 
+    <div>
         <h3>Final Project Research Paper</h3>
         <iframe width="400" height="500" src="https://drive.google.com/file/d/1JRr8_YWIv0F4AmZruK2gwk0bBoopKhbd/view?usp=sharing">
     </div>
-    <div style="">
+    <div>
         <h3>Final Project Poster</h3>
         <iframe width="400" height="500" src="https://drive.google.com/file/d/13hpyosqMasCsElHs0Bh4UKOvRgPXPpF8/view?usp=sharing">
     </div>
-    <div style="">
+    <div>
         <h3>Research Log</h3>
         <iframe width="400" height="500" src="https://drive.google.com/file/d/1S3DYiUO-ZwWVLG2IMKGkCN2S49HWiTFE/view?usp=sharing">
     </div>
