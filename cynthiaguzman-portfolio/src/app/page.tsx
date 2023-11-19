@@ -1,10 +1,9 @@
-import Link from "next/link";
 import GetPostMetaData from "../../components/GetPostMetaData";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "./components/ProjectCard";
 import { Lobster } from "@next/font/google";
 import { aboutMeData } from "../../data/data";
 import { skillData } from "../../data/data";
-import { SkillDisplay } from "../../skills/SkillDisplay";
+import { SkillDisplay } from "./components/SkillDisplay";
 
 const lobster = Lobster({
   weight: ['400'],
@@ -15,16 +14,16 @@ const about = {
   content: (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={aboutMeData.image} className="w-64 rounded-full shadow-2xl brightness-90" />
+        <img src={aboutMeData.image} className="w-52 lg:w-64 rounded-full shadow-2xl brightness-90" />
         <div>
           <div className={lobster.className}>
-            <p className="text-8xl text-primary">{aboutMeData.name}</p>
+            <p className="text-7xl lg:text-8xl text-primary">{aboutMeData.name}</p>
           </div>
-          <p className="py-6 text-2xl italic">{aboutMeData.title}</p>
-          <p className="text-lg">
+          <p className="py-6 text-xl lg:text-2xl italic">{aboutMeData.title}</p>
+          <p className="text-md lg:text-lg">
             {aboutMeData.body}
           </p>
-          <p className="text-lg pt-2">
+          <p className="text-md lg:text-lg pt-2">
             {aboutMeData.body2}
           </p>
         </div>
@@ -269,53 +268,14 @@ const skills = {
       </div> */}
       <div>
         {skillData.map((skill) => {
-          return <SkillDisplay data={skill}/> ;
+          return <SkillDisplay data={skill}/>
         })}
       </div>
-      <div>
-          <div className="float-right">
-            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
-                icon
-            </span>
-          </div>
-          <div className="float-right">
-            <h3 className="text-lg font-semibold">title</h3>
-            <div className="text-md">skill</div>
-          </div>
-        </div>
     </div>
     
   ),
 };
 
-// const projects = {
-//   content: (
-        // <div className="group rounded-xl shadow-lg bg-base-200 group-hover:bg-base-100 ease-in-out duration-500 max-w-md">
-        //   <img
-        //       aria-label={'Image of ${props.title}'}
-        //       src={props.thumbnail}
-        //       alt={props.title}
-        //       className="object-cover w-full h-48 rounded-xl p-3 group-hover:bg-base-100 ease-in-out duration-500"
-        //       width={1000}
-        //       height={500}
-        //     />
-        //   <div className="p-4 rounded-b-xl bg-base-200 group-hover:bg-base-100 ease-in-out duration-500">
-        //     <h3 className="text-lg font-medium">{props.title}</h3>
-        //     <p className="text-sm mt-2 min-h-50">{props.subtitle}</p>
-        //     <div className="flex flex-row mt-4 justify-between">
-        //       <a href={`/projects/${props.slug}`}  
-        //         className="btn btn-primary 
-        //         md:opacity-0 group-hover:opacity-100 
-        //         translate-y-1.5 group-hover:-translate-y-1.5 
-        //         hover:-translate-y-0.5 
-        //         ease-in-out duration-400 
-        //         group-hover:shadow-lg group-hover:shadow-neutral-500/30"
-        //         >Case Study</a>            
-        //     </div>
-        //   </div>
-        // </div>
-//   ),
-// };
 
 const HomePage = () => {
   const postMetaData = GetPostMetaData();
@@ -325,7 +285,6 @@ const HomePage = () => {
 
   return (
     <div className="mx-12 lg:mx-48">
-      {/* <div id="home">{hero.content}</div> */}
       <div id="about">{about.content}</div>
       <div id="experience">{experience.content}</div>
       <div id="projects">

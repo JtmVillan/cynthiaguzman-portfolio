@@ -1,6 +1,6 @@
 ---
 title: "Biomimetric Swimming Robot"
-subtitle: "Designed and fabricated a swimming, biomimetic robot later applied to a positive-feedback system developed by the Gravish Lab."
+subtitle: "Designed and fabricated a swimming, biomimetic robot later applied to a positive-feedback system."
 thumbnail: "https://i.imgur.com/KwvLCUW.png?1"
 ---
 

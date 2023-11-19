@@ -1,6 +1,6 @@
 ---
 title: "Embouchure Device"
-subtitle: "Created an assistive device to support the creation of the embouchure for a retired saxophone musician of 20 years with partial facial palsy"
+subtitle: "An assistive device to support the creation of the embouchure for retired saxophone musician with partial facial palsy"
 thumbnail: "https://i.imgur.com/vhBg8u5.png?1"
 ---
 

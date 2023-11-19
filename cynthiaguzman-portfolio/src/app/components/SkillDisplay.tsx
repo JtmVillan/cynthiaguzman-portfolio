@@ -1,9 +1,7 @@
-import { Suspense, lazy } from "react";
-import { skillData } from "../data/data";
-import { CadIcon } from "../public/components/CadIcon";
-import { FabIcon } from "../public/components/FabIcon";
-import { HardwareIcon } from "../public/components/HardwareIcon";
-import { ProLangIcon } from "../public/components/ProLangIcon";
+import { CadIcon } from "../../../public/components/CadIcon";
+import { FabIcon } from "../../../public/components/FabIcon";
+import { HardwareIcon } from "../../../public/components/HardwareIcon";
+import { ProLangIcon } from "../../../public/components/ProLangIcon";
 
 type SkillDisplayProps = {
     data: {
@@ -29,13 +27,13 @@ export const SkillDisplay = ({ data } : SkillDisplayProps) => {
     };
 
     return (
-        <div>
-          <div className="float-right">
+        <div className="flex flew-col gap-8 my-8 place-items-center">
+          <div className="">
             <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
                 {renderIcon(icon)}
             </span>
           </div>
-          <div className="float-right">
+          <div className="">
             <h3 className="text-lg font-semibold">{title}</h3>
             <div className="text-md">{skill}</div>
           </div>

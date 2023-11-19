@@ -2,8 +2,7 @@ export const Footer = () => {
     return (
         <footer className="footer flex flex-row justify-between py-4 px-8 bg-neutral text-neutral-content">
             <aside className="flex flex-row">
-                <p>
-                © 2023 
+                <p> © 2023 Cynthia Guzman | Created by 
                 <a href="https://jaredvillanueva.com/" className="ease-in duration-150 decoration-secondary hover:text-secondary" target="_blank" rel="noopener noreferrer"> Jared Villanueva</a>
                 </p>
             </aside>

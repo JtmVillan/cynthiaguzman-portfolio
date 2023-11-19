@@ -8,7 +8,7 @@ export const aboutMeData = {
     image: 'https://i.imgur.com/gBAboXp.png',
 };
 
-export const experiences = [
+export const experienceData = [
     {
         name: 'Gravish Lab (UCSD)',
         role: 'Undergraduate Student Researcher',
@@ -33,10 +33,9 @@ export const experiences = [
         date: 'Sept 2018 - May 2019',
         body: 'Devised measurement procedure for proxy dots produced by the 9000 Wedge Bonder, employing the Keyence VHX-1000 digital microscope. Conducted pixel calibration data acquisition and analysis for three types of die bonding machines to identify causes of machine calibration failures. Shadowed electrical and mechanical engineers addressing the 6532HP die bonder.',
     },
-
 ];
 
-export const miniProjects = [
+export const miniProjectData = [
     {
 		title: 'Mechanical Clock',
 		body: 'I learned basic assembly techniques in Inventor, designing an escapement wheel and treble clef pendulum. Inspired by my love for music, I chose the treble clef for its suitability for 8 bolts as weights. This project enhanced my skills with joints, constraints, and splines.'
