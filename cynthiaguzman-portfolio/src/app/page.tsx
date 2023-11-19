@@ -18,7 +18,7 @@ const about = {
         <img src={aboutMeData.image} className="w-52 lg:w-64 rounded-full shadow-2xl brightness-90" />
         <div>
           <div className={lobster.className}>
-            <p className="text-7xl lg:text-8xl text-primary">{aboutMeData.name}</p>
+            <p className="text-7xl lg:text-8xl text-secondary">{aboutMeData.name}</p>
           </div>
           <p className="py-6 text-xl lg:text-2xl italic">{aboutMeData.title}</p>
           <p className="text-md lg:text-lg">
@@ -58,7 +58,7 @@ const miniProjects = {
         <input type="checkbox"/>
         <div className="collapse-title">
           <span className= "inline-block rounded-full">
-            <svg className="w-12 h-12 p-3 stroke-current text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <svg className="w-12 h-12 p-3 stroke-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
             </svg>
           </span>

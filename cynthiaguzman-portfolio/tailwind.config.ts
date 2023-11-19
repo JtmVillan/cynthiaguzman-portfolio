@@ -59,15 +59,15 @@ const config: Config = {
     {
       mytheme: {
       
-        "primary": "#587468",
+        "primary": "#F5C800",
               
-        "secondary": "#D2914B",
+        "secondary": "#636C92",
               
         "accent": "#193D31",
               
-        "neutral": "#230000",
+        "neutral": "#2D3142",
               
-        "base-100": "#D0CAC8",
+        "base-100": "#F0E9E6",
               
         "info": "#0099ff",
               
