@@ -41,7 +41,7 @@ const about = {
   content: (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src="https://i.imgur.com/gBAboXp.png" className="w-64 rounded-full shadow-2xl" />
+        <img src="https://i.imgur.com/gBAboXp.png" className="w-64 rounded-full shadow-2xl brightness-90" />
         <div>
           <div className={lobster.className}>
             <p className="text-7xl text-primary">Cynthia Guzman</p>
@@ -70,8 +70,8 @@ const about = {
 const experience = {
   content: (
     <div className="px-8 py-16">
-      <div className="text-center py-8">
-        <h1 className="text-5xl font-extrabold">Experience</h1>
+      <div className="text-start py-8">
+        <h1 className="text-4xl font-extrabold">Experience</h1>
       </div>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
@@ -179,7 +179,7 @@ const experience = {
 
 const miniProjects = {
   content: (
-    <div className="text-center">
+    <div className="">
       {/* don't delete below line */}
        {/* <a role="button" href={`/projects/${props.slug}`} className="btn btn-primary">View Project</a> */}
       <div>
@@ -187,19 +187,17 @@ const miniProjects = {
       </div>
       <div className="collapse">
         <input type="checkbox"/>
-        <div className="collapse-title flex justify-center">
-          <div className="ps-6">
-            <span className= "inline-block rounded-full">
-              <svg className="w-12 h-12 p-3 stroke-current text-primary animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>
-            </span>
-          </div>
+        <div className="collapse-title">
+          <span className= "inline-block rounded-full">
+            <svg className="w-12 h-12 p-3 stroke-current text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
         </div>
         <div className="collapse-content">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-center pb-8">
+          <div className="flex flex-col lg:flex-row flex-row-wrap gap-16 pb-8">
             <div className="flex items-center justify-center">
-              <div className="group h-96 w-80 [perspective:1000px]">
+              <div className="group h-96 w-64 [perspective:1000px]">
                 <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   <div className="absolute inset-0">
                     <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://i.imgur.com/JzGyIQ5m.png" alt="" />
@@ -218,7 +216,7 @@ const miniProjects = {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <div className="group h-96 w-80 [perspective:1000px]">
+              <div className="group h-96 w-64 [perspective:1000px]">
                 <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   <div className="absolute inset-0">
                     <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://i.imgur.com/gXDtLfNm.png" alt="" />
@@ -246,45 +244,61 @@ const miniProjects = {
 const skills = {
   content: (
     <div className="py-8">
-      <div className="text-center">
-          <h1 className="text-5xl font-bold">Skills</h1>
+      <div className="">
+          <h1 className="text-4xl font-bold">Skills</h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-8 gap-8 content-center justify-center md:mx-36">
-        <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-primary">
-            <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
-            </svg>
-          </span>
-          <h3 className="text-lg font-semibold text-center">Hardware</h3>
-          <div className="text-md text-center">Arduino</div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 ps-8 pt-8 gap-8">
+        <div className="grid grid-cols-2 gap-2 justify-items-start">
+          <div className="place-item-end">
+            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
+              <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Hardware</h3>
+            <div className="text-md">Arduino</div>
+          </div>
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-primary">
-            <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-            </svg>
-          </span>
-          <h3 className="text-lg font-semibold text-center">Computer Aided Design</h3>
-          <div className="text-md text-center">Inventor, SolidWorks, Fusion360</div>
+        <div className="grid grid-cols-2 gap-2 justify-items-start">
+          <div>
+            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
+              <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Computer Aided Design</h3>
+            <div className="text-md">Inventor, SolidWorks, Fusion360</div>
+          </div>
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-primary">
-            <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-            </svg>
-          </span>
-          <h3 className="text-lg font-semibold text-center">Fabrication</h3>
-          <div className="text-md text-center">3D Printing, Soldering, Laser Cutting, GD&T</div>
+        <div className="grid grid-cols-2 gap-2 justify-items-start">
+          <div>
+            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
+              <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Fabrication</h3>
+            <div className="text-md">3D Printing, Soldering, Laser Cutting, GD&T</div>
+          </div>
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <span className="p-3 inline-block rounded-full bg-primary">
-            <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
-            </svg>
-          </span>
-          <h3 className="text-lg font-semibold text-center">Programming Languages</h3>
-          <div className="text-md text-center">Python, MatLab</div>
+        <div className="grid grid-cols-2 gap-2 justify-items-start">
+          <div>
+            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
+              <svg className="w-20 h-20 p-3 stroke-current text-primary-content" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Programming Languages</h3>
+            <div className="text-md">Python, MatLab</div>
+          </div>
         </div>
       </div>
     </div>
@@ -292,72 +306,30 @@ const skills = {
   ),
 };
 
-
-
-// DO NOT DELETE
 // const projects = {
 //   content: (
-//     <div className="mx-auto px-20 py-9">
-//       <div className="text-center py-9">
-//         <h1 className="text-5xl font-bold">Projects</h1>
-//       </div>
-//       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-//           <div id="project-music" className="mx-auto">
-//             <div className="card w-96 shadow-xl">
-//               <figure><img className="h-48 w-96" src="https://i.imgur.com/vpQEhrGm.png" alt="music-device" /></figure>
-//               <div className="card-body">
-//                 <h2 className="card-title">
-//                   <a className="link link-hover">3D Printed Embouchure Device for Woodwind Musicians</a>
-//                 </h2>
-//                 <p>Assistive device to create embouchure for partial facialy palsy</p>
-//                 <div className="card-actions justify-start">
-//                   <div className="badge badge-outline">Student Team</div> 
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div id="project-fish" className="mx-auto">
-//             <div className="card w-96 shadow-xl ">
-//               <figure><img className="h-48 w-96" src="https://i.imgur.com/xsn7jFym.png" alt="fish-robot" /></figure>
-//               <div className="card-body">
-//                 <h2 className="card-title">
-//                   <a className="link link-hover">Biomimetic Swimming Robot</a>
-//                 </h2>
-//                 <p>Robot with a compliant tail, using a wheel and wire mechanimd to change its curvature</p>
-//                 <div className="card-actions justify-start">
-//                   <div className="badge badge-outline">Student Team</div> 
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div id="project-lapar" className="mx-auto">
-//             <div className="card w-96 shadow-xl ">
-//             <figure><img className="h-48 w-96" src="https://i.imgur.com/FJnhxeIm.png" alt="lapar-device" /></figure>
-//               <div className="card-body">
-//                 <h2 className="card-title">
-//                   <a className="link link-hover">Laparoscopic Training Device</a>
-//                 </h2>
-//                 <p>​Improveed low-cost laparoscopic training device created by the <a href="https://morimotolab.eng.ucsd.edu/" className="link link-hover">Morimoto Lab</a>.</p>
-//                 <div className="card-actions justify-start">
-//                   <div className="badge badge-outline">Student Team</div> 
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div id="project-football" className="mx-auto">
-//             <div className="card w-96 shadow-xl ">
-//               <figure><img className="h-48 w-96" src="https://i.imgur.com/VsAj9cUm.png" alt="football-device" /></figure>
-//               <div className="card-body">
-//                 <h2 className="card-title">
-//                   <a className="link link-hover">Football Launcher</a>
-//                 </h2>
-//                 <p>Contraption capable of launching a football 99 yards.</p>
-//                 <div className="card-actions justify-start">
-//                   <div className="badge badge-outline">Student Team</div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
+//     <div className="group rounded-xl w-1/3-g shadow-lg bg-base-200 max-w-md">
+//       <img
+//           aria-label={'Image of ${props.title}'}
+//           src={props.thumbnail}
+//           alt={props.title}
+//           className="object-cover w-full h-48 rounded-xl p-3 group-hover:bg-base-100 ease-in-out duration-500"
+//           width={1000}
+//           height={500}
+//         />
+//       <div className="p-4 rounded-b-xl group-hover:bg-base-100 ease-in-out duration-500">
+//         <h3 className="text-lg font-medium">{props.title}</h3>
+//         <p className="text-sm mt-2 min-h-50">{props.subtitle}</p>
+//         <div className="flex flex-row mt-4 justify-between">
+//           <a href={`/projects/${props.slug}`}  
+//             className="btn btn-primary 
+//             md:opacity-0 group-hover:opacity-100 
+//             translate-y-1.5 group-hover:-translate-y-1.5 
+//             hover:-translate-y-0.5 
+//             ease-in-out duration-400 
+//             group-hover:shadow-lg group-hover:shadow-neutral-500/30"
+//             >Case Study</a>            
+//         </div>
 //       </div>
 //     </div>
 //   ),
@@ -375,8 +347,8 @@ const HomePage = () => {
       <div id="about">{about.content}</div>
       <div id="experience">{experience.content}</div>
       <div id="projects">
-        <div className="text-center pb-8 pt-20">
-          <h1 className="text-5xl font-extrabold">Projects</h1>
+        <div className="pb-8 pt-20">
+          <h1 className="text-4xl font-extrabold">Projects</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16">{postPreviews}</div>
       </div>

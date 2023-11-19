@@ -1,7 +1,7 @@
 ---
 title: "Football Launcher"
-subtitle: "Contraption capable of launching a football 99 yards"
-thumbnail: "https://i.imgur.com/VsAj9cUb.png"
+subtitle: "​The goal of this project was to design a contraption that will be able to launch a football 99 yards."
+thumbnail: "https://i.imgur.com/KpGVnoV.png?1"
 ---
 
 ![fig-1](https://i.imgur.com/MKzso1r.png)

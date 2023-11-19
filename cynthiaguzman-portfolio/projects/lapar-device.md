@@ -1,7 +1,7 @@
 ---
 title: "Laparoscopic Training Device"
-subtitle: "​Improved low-cost laparoscopic training device created by the Morimoto Lab"
-thumbnail: "https://i.imgur.com/FJnhxeIb.png"
+subtitle: "The goal of this project was to improve a low-cost laparoscopic training device created by the Morimoto Lab."
+thumbnail: "https://i.imgur.com/81xqajJ.png?2"
 ---
 ![fig-1](https://i.imgur.com/uhrpjZl.png)
 The focus of this project was on improving a low-cost system for Laparoscopic Skills Training. The original design was created by the Morimoto Lab at UCSD. One of the main successes of this device is that it uses customized instruments whose movement and control are used as inputs for video games to improve engagement.

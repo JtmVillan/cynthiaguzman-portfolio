@@ -1,7 +1,7 @@
 ---
 title: "Biomimetric Swimming Robot"
-subtitle: "Robot with a compliant tail, using a wheel and wire mechanism to change its curvature"
-thumbnail: "https://i.imgur.com/xsn7jFyb.png"
+subtitle: "Designed and fabricated a swimming, biomimetic robot later applied to a positive-feedback system developed by the Gravish Lab."
+thumbnail: "https://i.imgur.com/KwvLCUW.png?1"
 ---
 
 ![fish-3d](https://i.imgur.com/tUVX3BV.png)
