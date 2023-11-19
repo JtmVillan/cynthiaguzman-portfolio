@@ -60,7 +60,6 @@ const about = {
           <p className="text-xl">
             In my free time, you can find me crocheting at home or roller skating at my local skate park!
           </p>
-          <Link href="/not-existing-route">Not Found</Link>
         </div>
       </div>
     </div>
@@ -71,7 +70,7 @@ const experience = {
   content: (
     <div className="px-8 py-16">
       <div className="text-start py-8">
-        <h1 className="text-4xl font-extrabold">Experience</h1>
+        <h1 className="text-4xl font-extrabold">Experiences</h1>
       </div>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
