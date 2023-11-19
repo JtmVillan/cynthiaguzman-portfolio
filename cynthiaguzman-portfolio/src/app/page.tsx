@@ -1,9 +1,10 @@
 import GetPostMetaData from "../../components/GetPostMetaData";
 import ProjectCard from "./components/ProjectCard";
 import { Lobster } from "@next/font/google";
-import { aboutMeData } from "../../data/data";
+import { aboutMeData, experienceData } from "../../data/data";
 import { skillData } from "../../data/data";
 import { SkillDisplay } from "./components/SkillDisplay";
+import { ExperienceTimeline } from "./components/ExperienceTimeline";
 
 const lobster = Lobster({
   weight: ['400'],
@@ -34,110 +35,15 @@ const about = {
 
 const experience = {
   content: (
-    <div className="px-8 py-16">
+    <div className="py-16">
       <div className="text-start py-8">
         <h1 className="text-4xl font-extrabold">Experiences</h1>
       </div>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        <li>
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-start md:text-end ">
-            <time className="italic">Aug 2021 - Aug 2022</time>
-            <div className="text-xl font-bold flex flex-row gap-2 justify-end">
-              <a href="http://gravishlab.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="group ">
-                <div className="flex flex-row gap-2">
-                  <p  className="ease-in duration-150 decoration-primary group-hover:text-primary">Gravish Lab (UCSD)</p>
-                  <svg className="w-6 h-6 group-hover:translate-x-1 ease-in duration-150 group-hover:text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <p className="text-lg italic">Undergraduate Student Researcher</p>
-            <p className="text-md">
-              Crafted an inaugural research proposal based on past designs of biomimetic swimming robots.
-              Oversaw the design and fabrication processes of a swimming robot.
-              Created 3D printed components with Fusion 360 and laser-cut acrylic parts.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-end">
-            <time className="italic">May 2021 - Aug 2021</time>
-            <div className="text-xl font-bold flex flex-row gap-2">
-              <a href="https://morimotolab.eng.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="group ">
-                <div className="flex flex-row gap-2">
-                  <p  className="ease-in duration-150 decoration-primary group-hover:text-primary">Morimoto Lab (UCSD)</p>
-                  <svg className="w-6 h-6 group-hover:translate-x-1 ease-in duration-150 group-hover:text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <p className="text-lg italic">Undergraduate Student Researcher</p>
-            <p className="text-md">
-              Led enhancement of the Laparoscopic Training Device (LTD) through strategic design management.
-              Employed SolidWorks to create cost-effective 3D printed components for the LTD.
-              Developed expertise in rapid prototyping with a focus on optimizing cost-efficiency. 
-            </p>
-          </div>
-        </li>
-        <li>
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-start md:text-end">
-            <time className="italic">Jan 2021- Jun 2023</time>
-            <div className="text-xl font-bold flex flex-row gap-2 justify-end">
-              <a href="https://jacobsschool.ucsd.edu/idea/" target="_blank" rel="noopener noreferrer" className="group ">
-                <div className="flex flex-row gap-2">
-                  <p  className="ease-in duration-150 decoration-primary group-hover:text-primary">UCSD IDEA Center</p>
-                  <svg className="w-6 h-6 group-hover:translate-x-1 ease-in duration-150 group-hover:text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <p className="text-lg italic">Program Assistant</p>
-            <p className="text-md">
-              Offered administrative assistance for the <a href="https://jacobsschool.ucsd.edu/idea/admitted-undergraduates/aces" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary font-semibold text-primary" target="_blank" rel="noopener noreferrer">Academic Center for Engineering Success Program (ACES) </a>
-              and the <a href="https://jacobsschool.ucsd.edu/idea/current-undergraduates/ELC" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary font-semibold text-primary" target="_blank" rel="noopener noreferrer">Engineering Learning Communities (ELC).</a> Conveyed vital administrative details to 12 
-              peer educators and 77 ACES Scholars.
-              Directed the coordination of meetings, workshops, and social events for peer educators and scholars.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-          </div>
-          <div className="timeline-end">
-            <time className="italic">Sept 2018 - May 2019</time>
-            <div className="text-xl font-bold flex flex-row gap-2">
-              <a href="https://www.palomartechnologies.com/" target="_blank" rel="noopener noreferrer" className="group ">
-                <div className="flex flex-row gap-2">
-                  <p  className="ease-in duration-150 decoration-primary group-hover:text-primary">Palomar Technologies</p>
-                  <svg className="w-6 h-6 group-hover:translate-x-1 ease-in duration-150 group-hover:text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <p className="text-lg italic">Intern</p>
-            <p className="text-md">
-              Devised measurement procedure for proxy dots produced by the <a href="https://www.palomartechnologies.com/product/9000-wedge-bonder" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary font-semibold text-primary" target="_blank" rel="noopener noreferrer">9000 Wedge Bonder</a>, 
-              employing the <a href="https://www.keyence.com/products/microscope/digital-microscope/vhx-1000/models/vhx-1000e/" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary font-semibold text-primary" target="_blank" rel="noopener noreferrer">Keyence VHX-1000 digital microscope. </a>
-              Conducted pixel calibration data acquisition and analysis for three types of die bonding machines to identify causes of machine calibration failures.
-              Shadowed electrical and mechanical engineers addressing the <a href="https://www.palomartechnologies.com/product/6532hp-die-bonder font-semibold" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary font-semibold text-primary" target="_blank" rel="noopener noreferrer">6532HP die bonder.</a>
-            </p>
-          </div>
-        </li>
-      </ul>
+      <div>
+        {experienceData.map((exp) => {
+          return <ExperienceTimeline data={exp}/>
+        })}
+      </div>
     </div>
   ),
 };
@@ -145,10 +51,8 @@ const experience = {
 const miniProjects = {
   content: (
     <div className="">
-      {/* don't delete below line */}
-       {/* <a role="button" href={`/projects/${props.slug}`} className="btn btn-primary">View Project</a> */}
       <div>
-         <h1 className="text-4xl font-extrabold"> Mini Projects</h1>
+         <h1 className="text-3xl font-extrabold"> Mini Projects</h1>
       </div>
       <div className="collapse">
         <input type="checkbox"/>
@@ -212,6 +116,7 @@ const skills = {
       <div className="">
           <h1 className="text-4xl font-bold">Skills</h1>
       </div>
+      {/* Don't delete below */}
       {/* <div className="grid grid-cols-1 lg:grid-cols-2 ps-8 pt-8 gap-8">
         <div className="grid grid-cols-2 gap-2 justify-items-start">
           <div className="place-item-end">
@@ -266,7 +171,7 @@ const skills = {
           </div>
         </div>
       </div> */}
-      <div>
+      <div className="grid grid-col-1 lg:grid-cols-2">
         {skillData.map((skill) => {
           return <SkillDisplay data={skill}/>
         })}

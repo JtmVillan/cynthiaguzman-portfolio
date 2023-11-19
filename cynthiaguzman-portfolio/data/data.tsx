@@ -14,24 +14,28 @@ export const experienceData = [
         role: 'Undergraduate Student Researcher',
         date: 'Aug 2021 - Aug 2022',
         body: 'Crafted an inaugural research proposal based on past designs of biomimetic swimming robots. Oversaw the design and fabrication processes of a swimming robot. Created 3D printed components with Fusion 360 and laser-cut acrylic parts.',
+        link: "http://gravishlab.ucsd.edu/"
     },
     {
         name: 'Morimoto Lab (UCSD)',
         role: 'Undergraduate Student Researcher',
         date: 'May 2021 - Aug 2021',
         body: 'Led enhancement of the Laparoscopic Training Device (LTD) through strategic design management. Employed SolidWorks to create cost-effective 3D printed components for the LTD. Developed expertise in rapid prototyping with a focus on optimizing cost-efficiency.',
+        link: "https://morimotolab.eng.ucsd.edu/"
     },
     {
         name: 'UCSD IDEA Center',
         role: 'Program Assistant',
         date: 'Jan 2021- Jun 2023',
         body: 'Offered administrative assistance for the Academic Center for Engineering Success Program (ACES) and the Engineering Learning Communities (ELC). Conveyed vital administrative details to 12 peer educators and 77 ACES Scholars. Directed the coordination of meetings, workshops, and social events for peer educators and scholars.',
+        link: "https://jacobsschool.ucsd.edu/idea/"
     },
     {
         name: 'Palomar Technologies',
         role: 'Intern',
         date: 'Sept 2018 - May 2019',
         body: 'Devised measurement procedure for proxy dots produced by the 9000 Wedge Bonder, employing the Keyence VHX-1000 digital microscope. Conducted pixel calibration data acquisition and analysis for three types of die bonding machines to identify causes of machine calibration failures. Shadowed electrical and mechanical engineers addressing the 6532HP die bonder.',
+        link: "https://www.palomartechnologies.com/"
     },
 ];
 

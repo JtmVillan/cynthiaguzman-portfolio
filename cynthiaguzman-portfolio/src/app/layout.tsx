@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en" data-theme="dracula">
+    <html lang="en" data-theme="nord">
       <div className="flex flex-col min-h-screen text-base-content bg-base-300">
         <main className={raleway.className}>
           <Header/>

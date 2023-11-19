@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export const Header = () => {
     return (
-        <header className="navbar sticky py-4 px-8 top-0 z-50 bg-opacity-95 bg-base-100 font-extrabold">
+        <header className="navbar sticky py-4 px-8 top-0 z-50 bg-opacity-95 bg-neutral font-extrabold text-neutral-content">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="md:hidden">
