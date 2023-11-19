@@ -1,5 +1,4 @@
 import { PostMetaData } from "./PostMetaData";
-import Image from "next/image";
 const ProjectCard = (props: PostMetaData) => {
     return (
         <div className="group rounded-xl shadow-lg bg-base-200 group-hover:bg-base-100 ease-in-out duration-500 max-w-md">

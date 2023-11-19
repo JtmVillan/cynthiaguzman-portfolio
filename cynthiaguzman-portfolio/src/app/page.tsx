@@ -272,6 +272,17 @@ const skills = {
           return <SkillDisplay data={skill}/> ;
         })}
       </div>
+      <div>
+          <div className="float-right">
+            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
+                icon
+            </span>
+          </div>
+          <div className="float-right">
+            <h3 className="text-lg font-semibold">title</h3>
+            <div className="text-md">skill</div>
+          </div>
+        </div>
     </div>
     
   ),
