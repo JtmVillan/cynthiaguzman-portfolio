@@ -1,64 +1,31 @@
 import Link from "next/link";
 import GetPostMetaData from "../../components/GetPostMetaData";
-import PostPreview from "../../components/PostPreview";
+import ProjectCard from "../../components/ProjectCard";
 import { Lobster } from "@next/font/google";
-import { Prata } from "@next/font/google";
+import { aboutMeData } from "../../data/data";
+import { skillData } from "../../data/data";
+import { SkillDisplay } from "../../skills/SkillDisplay";
 
 const lobster = Lobster({
   weight: ['400'],
   subsets: ['latin'],
 })
 
-const prata= Prata({
-  weight: ['400'],
-  subsets: ['latin'],
-})
-
-const hero = {
-  content: (
-    <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.imgur.com/3CLQrIC.jpg)'}}>
-      <div className="hero-overlay bg-opacity-80"></div>
-      <div className="hero-content text-center">
-        <div className="max-w-lg text-center">
-          <h1 className="mb-5 text-6xl font-bold">Cynthia Guzman</h1>
-          <p className="mb-5 text-xl">Mechanical Engineer</p>
-          <footer>
-            <div className="flex justify-center py-20">
-              <Link href="#about">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 transition ease-in-out hover:translate-y-1 hover:scale-110 duration-300">
-                  <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z" clip-rule="evenodd" />
-                </svg>
-              </Link>
-            </div>
-          </footer>
-        </div>
-      </div>
-    </div>
-  ),
-};
-
 const about = {
   content: (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src="https://i.imgur.com/gBAboXp.png" className="w-64 rounded-full shadow-2xl brightness-90" />
+        <img src={aboutMeData.image} className="w-64 rounded-full shadow-2xl brightness-90" />
         <div>
           <div className={lobster.className}>
-            <p className="text-7xl text-primary">Cynthia Guzman</p>
+            <p className="text-8xl text-primary">{aboutMeData.name}</p>
           </div>
-          <p className="py-6 text-2xl">
-            <a href="https://mae.ucsd.edu/undergrad" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary 
-            text-primary" target="_blank" rel="noopener noreferrer">Mechanical Engineer </a>specialized in Robotics and Controls.</p>
-          <p className="text-xl">
-            I recently graduated
-            from <a href="https://ucsd.edu/" className="hover:underline underline-offset-4 ease-in duration-150 decoration-primary 
-            text-primary" target="_blank" rel="noopener noreferrer">UC San Diego</a> with an interest in mechanical 
-            design and robotics! During my time at UC San Diego, I've had the chance to work on various research projects and 
-            collaborate with and lead multidisciplinary teams. These experiences have enhanced my ability to think critically, 
-            solve complex problems, and work effectively in a team environment. .
+          <p className="py-6 text-2xl italic">{aboutMeData.title}</p>
+          <p className="text-lg">
+            {aboutMeData.body}
           </p>
-          <p className="text-xl">
-            In my free time, you can find me crocheting at home or roller skating at my local skate park!
+          <p className="text-lg pt-2">
+            {aboutMeData.body2}
           </p>
         </div>
       </div>
@@ -246,7 +213,7 @@ const skills = {
       <div className="">
           <h1 className="text-4xl font-bold">Skills</h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 ps-8 pt-8 gap-8">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 ps-8 pt-8 gap-8">
         <div className="grid grid-cols-2 gap-2 justify-items-start">
           <div className="place-item-end">
             <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
@@ -299,6 +266,11 @@ const skills = {
             <div className="text-md">Python, MatLab</div>
           </div>
         </div>
+      </div> */}
+      <div>
+        {skillData.map((skill) => {
+          return <SkillDisplay data={skill}/> ;
+        })}
       </div>
     </div>
     
@@ -307,37 +279,37 @@ const skills = {
 
 // const projects = {
 //   content: (
-//     <div className="group rounded-xl w-1/3-g shadow-lg bg-base-200 max-w-md">
-//       <img
-//           aria-label={'Image of ${props.title}'}
-//           src={props.thumbnail}
-//           alt={props.title}
-//           className="object-cover w-full h-48 rounded-xl p-3 group-hover:bg-base-100 ease-in-out duration-500"
-//           width={1000}
-//           height={500}
-//         />
-//       <div className="p-4 rounded-b-xl group-hover:bg-base-100 ease-in-out duration-500">
-//         <h3 className="text-lg font-medium">{props.title}</h3>
-//         <p className="text-sm mt-2 min-h-50">{props.subtitle}</p>
-//         <div className="flex flex-row mt-4 justify-between">
-//           <a href={`/projects/${props.slug}`}  
-//             className="btn btn-primary 
-//             md:opacity-0 group-hover:opacity-100 
-//             translate-y-1.5 group-hover:-translate-y-1.5 
-//             hover:-translate-y-0.5 
-//             ease-in-out duration-400 
-//             group-hover:shadow-lg group-hover:shadow-neutral-500/30"
-//             >Case Study</a>            
-//         </div>
-//       </div>
-//     </div>
+        // <div className="group rounded-xl shadow-lg bg-base-200 group-hover:bg-base-100 ease-in-out duration-500 max-w-md">
+        //   <img
+        //       aria-label={'Image of ${props.title}'}
+        //       src={props.thumbnail}
+        //       alt={props.title}
+        //       className="object-cover w-full h-48 rounded-xl p-3 group-hover:bg-base-100 ease-in-out duration-500"
+        //       width={1000}
+        //       height={500}
+        //     />
+        //   <div className="p-4 rounded-b-xl bg-base-200 group-hover:bg-base-100 ease-in-out duration-500">
+        //     <h3 className="text-lg font-medium">{props.title}</h3>
+        //     <p className="text-sm mt-2 min-h-50">{props.subtitle}</p>
+        //     <div className="flex flex-row mt-4 justify-between">
+        //       <a href={`/projects/${props.slug}`}  
+        //         className="btn btn-primary 
+        //         md:opacity-0 group-hover:opacity-100 
+        //         translate-y-1.5 group-hover:-translate-y-1.5 
+        //         hover:-translate-y-0.5 
+        //         ease-in-out duration-400 
+        //         group-hover:shadow-lg group-hover:shadow-neutral-500/30"
+        //         >Case Study</a>            
+        //     </div>
+        //   </div>
+        // </div>
 //   ),
 // };
 
 const HomePage = () => {
   const postMetaData = GetPostMetaData();
-  const postPreviews = postMetaData.map((post) => (
-    <PostPreview key={post.slug} {...post} />
+  const ProjectCards = postMetaData.map((post) => (
+    <ProjectCard key={post.slug} {...post} />
   ));
 
   return (
@@ -349,7 +321,7 @@ const HomePage = () => {
         <div className="pb-8 pt-20">
           <h1 className="text-4xl font-extrabold">Projects</h1>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16">{postPreviews}</div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16">{ProjectCards}</div>
       </div>
       <div>{miniProjects.content}</div>
       <div id="skills">{skills.content}</div>
