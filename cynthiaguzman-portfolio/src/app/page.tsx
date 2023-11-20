@@ -15,11 +15,11 @@ const lobster = Lobster({
 const about = {
   content: (
     <div className="hero min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero-content flex-col lg:flex-row-reverse text-primary">
         <img src={aboutMeData.image} className="w-52 lg:w-64 rounded-full shadow-2xl brightness-90" title="profile" alt="profile" />
         <div>
           <div className={lobster.className}>
-            <p className="text-7xl lg:text-8xl text-primary">{aboutMeData.name}</p>
+            <p className="text-7xl lg:text-8xl">{aboutMeData.name}</p>
           </div>
           <p className="py-6 text-xl lg:text-2xl italic">{aboutMeData.title}</p>
           <p className="text-md lg:text-lg">
@@ -44,69 +44,6 @@ const experience = {
         {experienceData.map((exp) => {
           return <ExperienceTimeline data={exp}/>
         })}
-      </div>
-    </div>
-  ),
-};
-
-const miniProjects = {
-  content: (
-    <div className="">
-      <div>
-         <h1 className="text-3xl font-extrabold text-primary"> Mini Projects</h1>
-      </div>
-      <div className="collapse">
-        <label htmlFor="reveal"/>
-        <input id="reveal" name="reveal" type="checkbox" title="reveal" placeholder="reveal"/>
-        <div className="collapse-title">
-          <span className= "inline-block rounded-full">
-            <svg className="w-12 h-12 p-3 stroke-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </span>
-        </div>
-        <div className="collapse-content">
-          <div className="flex flex-col lg:flex-row flex-row-wrap gap-16 pb-8">
-            <div className="flex items-center justify-center">
-              <div className="group h-96 w-64 [perspective:1000px]">
-                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  <div className="absolute inset-0">
-                    <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://i.imgur.com/JzGyIQ5m.png" alt="" />
-                  </div>
-                  <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div className="flex min-h-full flex-col items-center justify-center">
-                      <h1 className="text-3xl font-bold">Unique Chess Pieces</h1>
-                      <p className="text-xs lg:text-sm">
-                      In this brief side project, I crafted chess pieces with the piece names as the main body, 
-                      exploring unique shapes with various Inventor tools. 
-                      This initial foray into CAD software also provided valuable insights into designing for 3D printing integrity.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="group h-96 w-64 [perspective:1000px]">
-                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  <div className="absolute inset-0">
-                    <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://i.imgur.com/gXDtLfNm.png" alt="" />
-                  </div>
-                  <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div className="flex min-h-full flex-col items-center justify-center">
-                      <h1 className="text-3xl font-bold">Mechanical Clock</h1>
-                      <p className="text-xs lg:text-sm">
-                      I learned basic assembly techniques in Inventor, designing an escapement wheel and treble clef pendulum. 
-                      Inspired by my love for music, I chose the treble clef for its suitability for 8 bolts as weights. 
-                      This project enhanced my skills with joints, constraints, and splines.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   ),
@@ -208,11 +145,10 @@ const HomePage = () => {
       <div id="experience" className="">{experience.content}</div>
       <div id="projects" className="mx-12 lg:mx-48">
         <div className="pb-8 pt-20">
-          <h1 className="text-6xl font-extrabold">Projects</h1>
+          <h1 className="text-6xl font-extrabold text-neutral-content">Projects</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16">{ProjectCards}</div>
       </div>
-      <div className="mx-12 lg:mx-48">{miniProjects.content}</div>
       <div id="skills" className="">{skills.content}</div>
       <div id="contact" className="mx-12 lg:mx-48">{contact.content}</div>
     </div>

@@ -39,17 +39,6 @@ export const experienceData = [
     },
 ];
 
-export const miniProjectData = [
-    {
-		title: 'Mechanical Clock',
-		body: 'I learned basic assembly techniques in Inventor, designing an escapement wheel and treble clef pendulum. Inspired by my love for music, I chose the treble clef for its suitability for 8 bolts as weights. This project enhanced my skills with joints, constraints, and splines.'
-	},
-	{
-		title: 'Unique Chess Piece',
-		body: 'In this brief side project, I crafted chess pieces with the piece names as the main body, exploring unique shapes with various Inventor tools. This initial foray into CAD software also provided valuable insights into designing for 3D printing integrity.'
-	},
-];
-
 export const skillData = [
 	{
 		title: 'Hardware',
@@ -72,7 +61,7 @@ export const skillData = [
         icon: 'ProLangIcon',
 	},
 ];
-
+ 
 export const contactData = [
     {
         title: "Contact Me",

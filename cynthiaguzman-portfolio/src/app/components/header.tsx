@@ -15,6 +15,7 @@ export const Header = () => {
                     <li><Link href="/#experience">Experience</Link></li>
                     <li><Link href="/#projects">Projects</Link></li>
                     <li><Link href="/#skills">Skills</Link></li>
+                    <li><Link href="/#contact">Contact</Link></li>
                 </ul>
                 </div>
                 <a href="/"className="ps-4 text-xl hover:text-accent ease-in duration-150">Cynthia Guzman</a>
@@ -25,6 +26,7 @@ export const Header = () => {
                 <li><Link href="/#experience" className="hover:text-accent ease-in duration-150">Experience</Link></li>
                 <li><Link href="/#projects" className="hover:text-accent ease-in duration-150">Projects</Link></li>
                 <li><Link href="/#skills" className="hover:text-accent ease-in duration-150">Skills</Link></li>
+                <li><Link href="/#contact" className="hover:text-accent ease-in duration-150">Contact</Link></li>
                 </ul>
             </div>
             <div className="navbar-end md:flex">

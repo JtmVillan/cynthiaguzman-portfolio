@@ -42,7 +42,7 @@ export default function RootLayout({
           name="description"
           content="Mechanical Engineer Portfolio"/>
       </head>
-      <body className="flex flex-col min-h-screen bg-neutral text-primary">
+      <body className="flex flex-col min-h-screen bg-neutral">
         <main className={raleway.className}>
           <Header/>
           {children}

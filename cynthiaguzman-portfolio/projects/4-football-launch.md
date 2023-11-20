@@ -16,14 +16,12 @@ For our team, The Double Double, we decided to construct a launching machine tha
 
 I designed the prototype of this using cardboard, paper, a rubber band, a paperclip, chopsticks, and some coins.
 
-<div>
-    <h3>Final Prototype Video</h3>
-    <iframe src="https://drive.google.com/file/d/1tuacsRTvp9xbaDOXvrp3fdyIPBL47FsN/preview" width="640" height="480" allow="autoplay"></iframe>
-</div>
 
-<div> 
-    <h3>Final Report</h3>
-    <iframe src="https://drive.google.com/file/d/11hsLrEseqlEey1LrjSI3dP5GPnE1133t/preview" width="640" height="480" allow="autoplay"></iframe>
-    <h3>Final Project Presentation</h3>
-    <iframe src="https://drive.google.com/file/d/1MyAQBnyi4wWJCKtNXbtphqSQRXPeL80V/preview" width="640" height="480" allow="autoplay"></iframe>
-</div>
+### Final Prototype Video
+<iframe src="https://drive.google.com/file/d/1tuacsRTvp9xbaDOXvrp3fdyIPBL47FsN/preview" width="640" height="480" allow="autoplay"></iframe>
+
+### Final Report
+<iframe src="https://drive.google.com/file/d/11hsLrEseqlEey1LrjSI3dP5GPnE1133t/preview" width="640" height="480" allow="autoplay"></iframe>
+
+### Final Project Presentation
+<iframe src="https://drive.google.com/file/d/1MyAQBnyi4wWJCKtNXbtphqSQRXPeL80V/preview" width="640" height="480" allow="autoplay"></iframe>

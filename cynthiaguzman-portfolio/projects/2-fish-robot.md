@@ -24,16 +24,18 @@ We did initial testings of our robot in air by collecting spatial data on the ta
 
 ![fish-hold](https://i.imgur.com/zJT7GhK.png)
 
-<div> 
-    <h3>Initial Test</h3>
-    <iframe src="https://drive.google.com/file/d/12IYN4H8lBjxgT_z2J_PH3B0IrA1ho7zp/preview" width="640" height="480" allow="autoplay"></iframe>
-    <h3>Final Test</h3>
-    <iframe src="https://drive.google.com/file/d/1BaZs_yjbvxQEIrSevazSeEeAY3QmfoeF/preview" width="640" height="480" allow="autoplay"></iframe> 
-</div>
 
-<div> 
-    <h3>Final Project Research Paper</h3>
-    <iframe src="https://drive.google.com/file/d/1JRr8_YWIv0F4AmZruK2gwk0bBoopKhbd/preview" width="640" height="480" allow="autoplay"></iframe>
-    <h3>Final Project Poster</h3>
-    <iframe src="https://drive.google.com/file/d/13hpyosqMasCsElHs0Bh4UKOvRgPXPpF8/preview" width="640" height="480" allow="autoplay"></iframe>
-</div>
+### Initial Test
+<iframe src="https://drive.google.com/file/d/12IYN4H8lBjxgT_z2J_PH3B0IrA1ho7zp/preview" width="640" height="480" allow="autoplay"></iframe>
+
+### Final Test
+<iframe src="https://drive.google.com/file/d/1BaZs_yjbvxQEIrSevazSeEeAY3QmfoeF/preview" width="640" height="480" allow="autoplay"></iframe> 
+
+
+
+### Final Project Research Paper
+<iframe src="https://drive.google.com/file/d/1JRr8_YWIv0F4AmZruK2gwk0bBoopKhbd/preview" width="640" height="480" allow="autoplay"></iframe>
+
+### Final Project Poster
+<iframe src="https://drive.google.com/file/d/13hpyosqMasCsElHs0Bh4UKOvRgPXPpF8/preview" width="640" height="480" allow="autoplay"></iframe>
+

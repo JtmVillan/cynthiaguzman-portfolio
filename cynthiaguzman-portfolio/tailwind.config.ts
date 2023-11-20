@@ -64,7 +64,7 @@ const config: Config = {
               
         "neutral": "#EAF4F4",
               
-        "base-100": "#9CE7AA",
+        "base-100": "#2F7561",
               
         "info": "#0099ff",
               
