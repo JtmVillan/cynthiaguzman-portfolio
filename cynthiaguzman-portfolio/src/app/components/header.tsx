@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export const Header = () => {
     return (
-        <header className="navbar sticky py-4 px-8 top-0 z-50 bg-opacity-95 bg-neutral font-extrabold text-neutral-content">
+        <header className="navbar sticky py-4 px-8 top-0 z-50 bg-opacity-95 bg-secondary font-extrabold text-secondary-content">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="md:hidden">
@@ -17,18 +17,18 @@ export const Header = () => {
                     <li><Link href="/#skills">Skills</Link></li>
                 </ul>
                 </div>
-                <a href="/"className="ps-4 text-xl hover:text-secondary ease-in duration-150">Cynthia Guzman</a>
+                <a href="/"className="ps-4 text-xl hover:text-accent ease-in duration-150">Cynthia Guzman</a>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="flex flex-row gap-4 px-1 ">
-                <li><Link href="/#about" className="hover:text-secondary ease-in duration-150">Home</Link></li>
-                <li><Link href="/#experience" className="hover:text-secondary ease-in duration-150">Experience</Link></li>
-                <li><Link href="/#projects" className="hover:text-secondary ease-in duration-150">Projects</Link></li>
-                <li><Link href="/#skills" className="hover:text-secondary ease-in duration-150">Skills</Link></li>
+                <li><Link href="/#about" className="hover:text-accent ease-in duration-150">Home</Link></li>
+                <li><Link href="/#experience" className="hover:text-accent ease-in duration-150">Experience</Link></li>
+                <li><Link href="/#projects" className="hover:text-accent ease-in duration-150">Projects</Link></li>
+                <li><Link href="/#skills" className="hover:text-accent ease-in duration-150">Skills</Link></li>
                 </ul>
             </div>
             <div className="navbar-end md:flex">
-                <a href="https://docs.google.com/document/d/e/2PACX-1vSOzNIgoAq0A4Wr7jDqGKfihnPC-2OjfqiAVJLTFxi5-HFeHwFO8NuuabNttTlv9Q/pub" className="hover:text-secondary ease-in duration-150" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vSOzNIgoAq0A4Wr7jDqGKfihnPC-2OjfqiAVJLTFxi5-HFeHwFO8NuuabNttTlv9Q/pub" className="hover:text-accent ease-in duration-150" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
             </header>
     )

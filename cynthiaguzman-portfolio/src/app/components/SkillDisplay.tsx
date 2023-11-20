@@ -27,15 +27,15 @@ export const SkillDisplay = ({ data } : SkillDisplayProps) => {
     };
 
     return (
-        <div className="flex flew-col gap-8 my-8 place-items-center">
+        <div className="flex flew-col gap-8 my-8 place-items-center text-primary-content">
           <div className="">
-            <span className="p-3 inline-block rounded-full bg-primary drop-shadow-xl">
+            <span className="p-3 inline-block rounded-full bg-base-100 text-base-content drop-shadow-xl">
                 {renderIcon(icon)}
             </span>
           </div>
           <div className="">
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <div className="text-md">{skill}</div>
+            <h3 className="text-xl font-semibold">{title}</h3>
+            <div className="text-lg">{skill}</div>
           </div>
         </div>
     );

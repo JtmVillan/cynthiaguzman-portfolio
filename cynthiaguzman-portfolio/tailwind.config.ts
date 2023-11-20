@@ -13,9 +13,6 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      // fontFamily: {
-      //   sans:['var(--font-inter)']
-      // },
     },
   },
   plugins: [
@@ -59,15 +56,15 @@ const config: Config = {
     {
       mytheme: {
       
-        "primary": "#F5C800",
+        "primary": "#51292C",
               
-        "secondary": "#636C92",
+        "secondary": "#101719",
               
-        "accent": "#193D31",
+        "accent": "#60E1E0",
               
-        "neutral": "#2D3142",
+        "neutral": "#EAF4F4",
               
-        "base-100": "#F0E9E6",
+        "base-100": "#9CE7AA",
               
         "info": "#0099ff",
               

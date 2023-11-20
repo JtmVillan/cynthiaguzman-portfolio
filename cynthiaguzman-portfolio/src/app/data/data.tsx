@@ -72,3 +72,11 @@ export const skillData = [
         icon: 'ProLangIcon',
 	},
 ];
+
+export const contactData = [
+    {
+        title: "Contact Me",
+        subheading: "New ideas, projects, or freelance",
+        body:"Thanks for visiting my site! If you have any questions or would like to collaborate, I would love to hear from you. Feel free to reach out using the form."
+    }
+];

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+// import type { Metadata } from 'next'
 import { Inter } from '@next/font/google'
 import { Roboto } from '@next/font/google'
 import { Raleway } from '@next/font/google'
@@ -6,6 +6,7 @@ import './globals.css'
 import React from 'react';
 import { Header } from './components/header'
 import { Footer } from './components/footer'
+import type { Metadata } from 'next'
 
 const inter = Inter({
   subsets:['latin'],
@@ -34,13 +35,20 @@ export default function RootLayout({
 
   return (
     <html lang="en" data-theme="mytheme">
-      <div className="flex flex-col min-h-screen text-base-content bg-base-300">
+      <head>
+        <meta charSet="utf-8" />
+        <title>Cynthia Guzman</title>
+        <meta
+          name="description"
+          content="Mechanical Engineer Portfolio"/>
+      </head>
+      <body className="flex flex-col min-h-screen bg-neutral text-primary">
         <main className={raleway.className}>
           <Header/>
           {children}
           <Footer/>
         </main>
-      </div>
+      </body>
     </html>
   );
 }

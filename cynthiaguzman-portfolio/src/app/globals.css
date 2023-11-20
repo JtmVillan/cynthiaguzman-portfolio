@@ -7,3 +7,28 @@
     @apply scroll-smooth;
   }
 }
+
+.input-form {
+  @apply bg-base-100 p-2 w-full border-b-4 border-secondary
+}
+
+.label-form {
+  @apply font-semibold mb-2
+}
+
+.a-button {
+  @apply btn btn-accent 
+                lg:opacity-0 group-hover:opacity-100 
+                translate-y-1.5 group-hover:-translate-y-1.5 
+                hover:-translate-y-0.5 
+                ease-in-out duration-500 
+                group-hover:shadow-lg group-hover:shadow-neutral-500/30
+}
+
+.btn-button {
+  @apply 
+  btn btn-accent 
+  hover:-translate-y-0.5 
+  ease-in-out duration-500 
+  hover:shadow-lg hover:shadow-neutral-500/30
+}
