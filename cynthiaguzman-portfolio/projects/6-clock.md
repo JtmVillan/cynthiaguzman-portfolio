@@ -19,4 +19,4 @@ I found it fun to design the pendulum and got more experience using splines.
 
 
 ### Motion Demo
-<iframe src="https://drive.google.com/file/d/1jFC-_PeDvtQo0VSuWQYu0x4-oxYHSBqO/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1jFC-_PeDvtQo0VSuWQYu0x4-oxYHSBqO/preview" width="100%" height="480" allow="autoplay"></iframe>

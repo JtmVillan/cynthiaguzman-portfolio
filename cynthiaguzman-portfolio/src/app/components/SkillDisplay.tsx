@@ -27,7 +27,7 @@ export const SkillDisplay = ({ data } : SkillDisplayProps) => {
     };
 
     return (
-        <div className="flex flew-col gap-8 my-8 place-items-center text-primary-content">
+        <div className="flex flew-col gap-8 my-8 place-items-center text-neutral-content">
           <div className="">
             <span className="p-3 inline-block rounded-full bg-base-100 text-base-content drop-shadow-xl">
                 {renderIcon(icon)}

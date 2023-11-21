@@ -47,7 +47,7 @@ export const Form = () => {
         }
 
     return (
-        <form onSubmit={handleSubmit} className="p-2" action="https://formspree.io/f/mzblqyla" method="POST">
+        <form onSubmit={handleSubmit} className="my-4" action="https://formspree.io/f/mzblqyla" method="POST">
             <div className="mb-4">
                 <label className="label-form" htmlFor="name">
                     Name

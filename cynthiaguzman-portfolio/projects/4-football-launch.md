@@ -18,10 +18,10 @@ I designed the prototype of this using cardboard, paper, a rubber band, a paperc
 
 
 ### Final Prototype Video
-<iframe src="https://drive.google.com/file/d/1tuacsRTvp9xbaDOXvrp3fdyIPBL47FsN/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1tuacsRTvp9xbaDOXvrp3fdyIPBL47FsN/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Final Report
-<iframe src="https://drive.google.com/file/d/11hsLrEseqlEey1LrjSI3dP5GPnE1133t/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/11hsLrEseqlEey1LrjSI3dP5GPnE1133t/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Final Project Presentation
-<iframe src="https://drive.google.com/file/d/1MyAQBnyi4wWJCKtNXbtphqSQRXPeL80V/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1MyAQBnyi4wWJCKtNXbtphqSQRXPeL80V/preview" width="100%" height="480" allow="autoplay"></iframe>

@@ -36,9 +36,9 @@ const about = {
 
 const experience = {
   content: (
-    <div className="my-16 py-12 px-12 lg:px-48 bg-base-300 text-base-content">
+    <div className="py-12 px-12 lg:px-48 bg-secondary text-base-content">
       <div className="text-start py-8">
-        <h1 className="text-6xl font-extrabold">Experiences</h1>
+        <h1 className="text-5xl font-extrabold">Experiences</h1>
       </div>
       <div>
         {experienceData.map((exp) => {
@@ -51,7 +51,7 @@ const experience = {
 
 const skills = {
   content: (
-    <div className="my-12 py-48 px-12 lg:px-48 bg-secondary text-secondary-content">
+    <div className="py-48 px-12 lg:px-48 bg-neutral text-neutral-content">
       <div className="">
           <h1 className="text-6xl font-bold">Skills</h1>
       </div>
@@ -143,14 +143,14 @@ const HomePage = () => {
     <div>
       <div id="about" className="mx-12 lg:mx-48">{about.content}</div>
       <div id="experience" className="">{experience.content}</div>
-      <div id="projects" className="mx-12 lg:mx-48">
+      <div id="projects" className="px-12 lg:px-48 bg-base-300">
         <div className="pb-8 pt-20">
-          <h1 className="text-6xl font-extrabold text-neutral-content">Projects</h1>
+          <h1 className="text-6xl font-extrabold text-base-content">Projects</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-16">{ProjectCards}</div>
       </div>
       <div id="skills" className="">{skills.content}</div>
-      <div id="contact" className="mx-12 lg:mx-48">{contact.content}</div>
+      <div id="contact" className="px-12 lg:px-48 bg-secondary">{contact.content}</div>
     </div>
   );
 };

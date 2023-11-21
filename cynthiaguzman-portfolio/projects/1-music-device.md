@@ -47,22 +47,22 @@ In order to see how much pressure is required to play the saxophone, we measured
 
 
 ### Patient Playing without a Device
-<iframe src="https://drive.google.com/file/d/1e71TYg2zZhPJPVs3CJEeabJWWd0pkspX/preview" width="640" height="480" 
+<iframe src="https://drive.google.com/file/d/1e71TYg2zZhPJPVs3CJEeabJWWd0pkspX/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Patient Playing with Final Device
-<iframe src="https://drive.google.com/file/d/1vhlnbmqRhlCq4zPOzq7OLvRDFH6dAjTl/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1vhlnbmqRhlCq4zPOzq7OLvRDFH6dAjTl/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Final Project Research Paper
-<iframe src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Final Project Poster
-<iframe src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Executive Summary
-<iframe src="https://drive.google.com/file/d/14c7AUa_FggeBGzp5uZyvAYFUpGLeAeiP/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/14c7AUa_FggeBGzp5uZyvAYFUpGLeAeiP/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Individual Component Analysis: Model Generation
-<iframe src="https://drive.google.com/file/d/1SKNHbyCQIwhDukB2Fgnu0IULZ98NA_DW/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1SKNHbyCQIwhDukB2Fgnu0IULZ98NA_DW/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 
 
