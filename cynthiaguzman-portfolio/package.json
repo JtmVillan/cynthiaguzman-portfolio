@@ -13,6 +13,7 @@
     "@next/font": "^14.0.3",
     "@pdftron/pdfjs-express": "^8.7.4",
     "@types/react-scroll": "^1.8.10",
+    "@vercel/analytics": "^1.1.1",
     "css-loader": "^6.8.1",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.3.2",

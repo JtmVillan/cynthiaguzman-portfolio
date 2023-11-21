@@ -8,6 +8,7 @@ import React from 'react';
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets:['latin'],
@@ -56,6 +57,7 @@ export default function RootLayout({
         <main className={ruda.className}>
           <Header/>
           {children}
+          <Analytics />
           <Footer/>
         </main>
       </body>
