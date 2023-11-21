@@ -4,7 +4,7 @@ subtitle: "An assistive device to support the creation of the embouchure for ret
 thumbnail: "https://i.imgur.com/vhBg8u5.png?1"
 ---
 
-![music-device-thumb](https://i.imgur.com/vpQEhrG.png)
+![music-device-thumb](https://i.imgur.com/HbrEB1h.png)
 
 
 Facial palsy, or weakness of the facial muscles, arises from temporary or permanent injury to the facial nerve. There have been limited studies on the effect of facial palsy on musicians. In the case of woodwind musicians, sound is produced by using a specific embouchure (the coordination of the cheek, mouth, tongue, and teeth when playing an instrument). For many professional or long-term musicians with facial palsy, the inability to play is devastating. 
@@ -28,11 +28,11 @@ We will also compare the quality of sound (air pressure and air velocity) with a
 
 ## Final Design
 
-|![final design](https://i.imgur.com/JYMhN6U.png)|
+|![final-design](https://i.imgur.com/JYMhN6U.png)|
 |:--:|
 |*Final device design. Device sleeve (green), mounting wall (blue), silicone interface (magenta), saxophone mouthpiece (dark purple).*|
 
-|![initial design](https://i.imgur.com/yhf2Q1i.png)|
+|![initial-design](https://i.imgur.com/yhf2Q1i.png)|
 |:--:|
 |*Patient testing final design. Silicone attached to the wall mount with temporary fixtures (zip ties). Wall mount  (dark gray), silicone (white).*|
 
