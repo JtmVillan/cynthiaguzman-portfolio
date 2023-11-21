@@ -6,8 +6,15 @@ import { skillData } from "./data/data";
 import { SkillDisplay } from "./components/SkillDisplay";
 import { ExperienceTimeline } from "./components/ExperienceTimeline";
 import { Contact } from "./components/Contact";
+import { Grenze_Gotisch } from "@next/font/google";
+import { Fredericka_the_Great } from "@next/font/google";
 
 const lobster = Lobster({
+  weight: ['400'],
+  subsets: ['latin'],
+})
+
+const fred = Fredericka_the_Great({
   weight: ['400'],
   subsets: ['latin'],
 })
@@ -18,7 +25,7 @@ const about = {
       <div className="hero-content flex-col lg:flex-row-reverse text-primary">
         <img src={aboutMeData.image} className="w-52 lg:w-64 rounded-full shadow-2xl brightness-90" title="profile" alt="profile" />
         <div>
-          <div className={lobster.className}>
+          <div className={fred.className}>
             <p className="text-7xl lg:text-8xl">{aboutMeData.name}</p>
           </div>
           <p className="py-6 text-xl lg:text-2xl italic">{aboutMeData.title}</p>
@@ -36,7 +43,7 @@ const about = {
 
 const experience = {
   content: (
-    <div className="py-12 px-12 lg:px-48 bg-secondary text-base-content">
+    <div className="py-20 px-12 lg:px-48 bg-secondary text-base-content">
       <div className="text-start py-8">
         <h1 className="text-5xl font-extrabold">Experiences</h1>
       </div>
@@ -53,7 +60,7 @@ const skills = {
   content: (
     <div className="py-48 px-12 lg:px-48 bg-neutral text-neutral-content">
       <div className="">
-          <h1 className="text-6xl font-bold">Skills</h1>
+          <h1 className="text-5xl font-bold">Skills</h1>
       </div>
       {/* Don't delete below */}
       {/* <div className="grid grid-cols-1 lg:grid-cols-2 ps-8 pt-8 gap-8">
@@ -122,7 +129,7 @@ const skills = {
 
 const contact = {
   content: (
-    <div className="py-16">
+    <div className="py-20">
       <div>
         {contactData.map((con) => {
           return <Contact data={con}/>
@@ -141,11 +148,11 @@ const HomePage = () => {
 
   return (
     <div>
-      <div id="about" className="mx-12 lg:mx-48">{about.content}</div>
+      <div id="about" className="my-24 lg:my-0 mx-12 lg:mx-48">{about.content}</div>
       <div id="experience" className="">{experience.content}</div>
-      <div id="projects" className="px-12 lg:px-48 bg-base-300">
+      <div id="projects" className="py-8 px-12 lg:px-48 bg-base-300">
         <div className="pb-8 pt-20">
-          <h1 className="text-6xl font-extrabold text-base-content">Projects</h1>
+          <h1 className="text-5xl font-extrabold text-base-content">Projects</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-16">{ProjectCards}</div>
       </div>

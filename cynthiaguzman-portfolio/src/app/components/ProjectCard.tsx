@@ -7,7 +7,7 @@ const ProjectCard = (props: PostMetaData) => {
               aria-label={'Image of ${props.title}'}
               src={props.thumbnail}
               alt={props.title}
-              className="object-cover w-full h-48 group-hover:bg-base-100 rounded-t-xl p-3 ease-in-out duration-500"
+              className="object-cover w-full h-48 bg-base-200 group-hover:bg-base-100 rounded-t-xl p-3 ease-in-out duration-500"
               width={1000}
               height={500}
             />
