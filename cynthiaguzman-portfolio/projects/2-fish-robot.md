@@ -1,7 +1,7 @@
 ---
 title: "Biomimetric Swimming Robot"
-subtitle: "Designed and fabricated a swimming, biomimetic robot later applied to a positive-feedback system."
-thumbnail: "https://i.imgur.com/KwvLCUW.png?1"
+subtitle: "Designed and fabricated a biomimetic swimming robot to later be used as an application of a positive-feedback system."
+thumbnail: "https://i.imgur.com/tUVX3BV.png"
 ---
 
 ![fish-3d](https://i.imgur.com/tUVX3BV.png)

@@ -12,9 +12,9 @@ const ProjectCard = (props: PostMetaData) => {
               height={500}
             />
           <div className="p-4 rounded-b-xl group-hover:bg-base-100 ease-in-out duration-500">
-            <h3 className="text-lg font-medium">{props.title}</h3>
-            <p className="text-sm mt-2 min-h-50">{props.subtitle}</p>
-            <div className="flex flex-row mt-4">
+            <h3 className="text-xl font-medium">{props.title}</h3>
+            <p className="text-lg pt-2 min-h-50">{props.subtitle}</p>
+            <div className="flex flex-row py-4">
               <a href={`/projects/${props.slug}`}  
                 className="a-button"
                 >Case Study</a>            

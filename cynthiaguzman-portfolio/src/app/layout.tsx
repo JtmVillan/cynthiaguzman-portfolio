@@ -9,6 +9,9 @@ import { Header } from './components/header'
 import { Footer } from './components/footer'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react';
+import { Noto_Sans } from '@next/font/google'
+import { Ubuntu } from '@next/font/google'
+import { Dosis } from '@next/font/google'
 
 const inter = Inter({
   subsets:['latin'],
@@ -27,6 +30,21 @@ const ruda = Ruda({
   subsets: ['latin'],
 })
 
+const noto_sans = Noto_Sans({
+  subsets: ['latin'],
+  weight: ['400'],
+})
+
+
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['400'],
+})
+
+const dosis = Dosis({
+  subsets: ['latin'],
+  weight: ['400'],
+})
 
 
 export const metadata: Metadata = {
@@ -54,7 +72,7 @@ export default function RootLayout({
           <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon-16x16.png" />
       </head>
       <body className="flex flex-col min-h-screen bg-neutral">
-        <main className={ruda.className}>
+        <main className={dosis.className}>
           <Header/>
           {children}
           <Analytics />

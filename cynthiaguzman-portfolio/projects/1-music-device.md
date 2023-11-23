@@ -1,7 +1,7 @@
 ---
 title: "Embouchure Device"
 subtitle: "An assistive device to support the creation of the embouchure for retired saxophone musician with partial facial palsy"
-thumbnail: "https://i.imgur.com/vhBg8u5.png?1"
+thumbnail: "https://i.imgur.com/HbrEB1h.png"
 ---
 
 ![music-device-thumb](https://i.imgur.com/HbrEB1h.png)
@@ -11,6 +11,8 @@ Facial palsy, or weakness of the facial muscles, arises from temporary or perman
 
 
 The goal of our project is to create an assistive device to support the creation of the embouchure for a patient with partial facialy palsy of our sponsor and retired saxophone musician of 20 years.
+
+[Project site](https://sites.google.com/eng.ucsd.edu/mae156bteam13spring2023/home)
 
 ## Project Objectives
 
@@ -56,7 +58,7 @@ In order to see how much pressure is required to play the saxophone, we measured
 <iframe src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Final Project Poster
-<iframe src="https://drive.google.com/file/d/1Tqb0VUNd9hW4ggErWagCwMkEsc44W-fi/preview" width="100%" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1VwNzwDO98irLDcICQWzldgvdDUf9A0vt/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ### Executive Summary
 <iframe src="https://drive.google.com/file/d/14c7AUa_FggeBGzp5uZyvAYFUpGLeAeiP/preview" width="100%" height="480" allow="autoplay"></iframe>

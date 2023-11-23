@@ -6,15 +6,10 @@ import { skillData } from "./data/data";
 import { SkillDisplay } from "./components/SkillDisplay";
 import { ExperienceTimeline } from "./components/ExperienceTimeline";
 import { Contact } from "./components/Contact";
-import { Grenze_Gotisch } from "@next/font/google";
-import { Fredericka_the_Great } from "@next/font/google";
+import { Concert_One } from "@next/font/google";
 
-const lobster = Lobster({
-  weight: ['400'],
-  subsets: ['latin'],
-})
 
-const fred = Fredericka_the_Great({
+const concert = Concert_One({
   weight: ['400'],
   subsets: ['latin'],
 })
@@ -25,16 +20,18 @@ const about = {
       <div className="hero-content flex-col lg:flex-row-reverse text-primary">
         <img src={aboutMeData.image} className="w-52 lg:w-64 rounded-full shadow-2xl brightness-90" title="profile" alt="profile" />
         <div>
-          <div className={fred.className}>
-            <p className="text-7xl lg:text-8xl">{aboutMeData.name}</p>
+          <div className={concert.className}>
+            <p className="text-7xl lg:text-8xl font-bold">{aboutMeData.name}</p>
           </div>
-          <p className="py-6 text-xl lg:text-2xl italic">{aboutMeData.title}</p>
-          <p className="text-md lg:text-lg">
-            {aboutMeData.body}
-          </p>
-          <p className="text-md lg:text-lg pt-2">
-            {aboutMeData.body2} 
-          </p>
+            <p className="py-6 text-2xl lg:text-3xl italic">{aboutMeData.title}</p>
+          <div className="text-xl lg:text-2xl pt-2">
+            <p>
+              {aboutMeData.body}
+            </p>
+            <p className="pt-2">
+              {aboutMeData.body2} 
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -44,8 +41,10 @@ const about = {
 const experience = {
   content: (
     <div className="py-20 px-12 lg:px-48 bg-secondary text-base-content">
-      <div className="text-start py-8">
-        <h1 className="text-5xl font-extrabold">Experiences</h1>
+      <div className={concert.className}>
+        <div className="text-start py-8">
+          <h1 className="text-5xl font-extrabold">Experiences</h1>
+        </div>
       </div>
       <div>
         {experienceData.map((exp) => {
@@ -59,7 +58,7 @@ const experience = {
 const skills = {
   content: (
     <div className="py-48 px-12 lg:px-48 bg-neutral text-neutral-content">
-      <div className="">
+      <div className={concert.className}>
           <h1 className="text-5xl font-bold">Skills</h1>
       </div>
       {/* Don't delete below */}
@@ -151,9 +150,11 @@ const HomePage = () => {
       <div id="about" className="my-24 lg:my-0 mx-12 lg:mx-48">{about.content}</div>
       <div id="experience" className="">{experience.content}</div>
       <div id="projects" className="py-8 px-12 lg:px-48 bg-base-300">
+      <div className={concert.className}>
         <div className="pb-8 pt-20">
           <h1 className="text-5xl font-extrabold text-base-content">Projects</h1>
         </div>
+       </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-16">{ProjectCards}</div>
       </div>
       <div id="skills" className="">{skills.content}</div>
