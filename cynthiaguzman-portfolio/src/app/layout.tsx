@@ -66,10 +66,6 @@ export default function RootLayout({
         <meta
           name="description"
           content="Mechanical Engineer Portfolio"/>
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon-16x16.png" />
       </head>
       <body className="flex flex-col min-h-screen bg-neutral">
         <main className={dosis.className}>
