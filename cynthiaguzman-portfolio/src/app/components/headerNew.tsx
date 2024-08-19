@@ -87,9 +87,9 @@ export const HeaderNew = () => {
       </div>
       <div className="navbar-end">
           <Link  
-            href={'/public/files/Cynthia Guzman Resume 2024.pdf'}
+            href={'https://docs.google.com/document/d/1uzCA5gz_KHHZ7ZZfMyvmKlrg1EFv_epMMTomAd0Up5k/edit?usp=sharing'}
             className="btn btn-accent"
-            target="_blank"  rel="noopener noreferrer" locale={false} download>
+            target="_blank"  rel="noopener noreferrer" locale={false}>
               Resume
           </Link>
 
