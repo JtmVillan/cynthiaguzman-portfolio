@@ -1,14 +1,16 @@
 // import type { Metadata } from 'next'
+
+import './globals.css'
+import React from 'react';
+import { Header } from './components/header'
+import { HeaderNew } from './components/headerNew';
+import { Footer } from './components/footer'
+import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from '@next/font/google'
 import { Roboto } from '@next/font/google'
 import { Raleway } from '@next/font/google'
 import { Ruda } from '@next/font/google'
-import './globals.css'
-import React from 'react';
-import { Header } from './components/header'
-import { Footer } from './components/footer'
-import type { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/react';
 import { Noto_Sans } from '@next/font/google'
 import { Ubuntu } from '@next/font/google'
 import { Dosis } from '@next/font/google'
@@ -59,7 +61,7 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en" data-theme="mytheme">
+    <html lang="en" data-theme="autumn">
       <head>
         <meta charSet="utf-8" />
         <title>Cynthia Guzman</title>
@@ -67,9 +69,9 @@ export default function RootLayout({
           name="description"
           content="Mechanical Engineer Portfolio"/>
       </head>
-      <body className="flex flex-col min-h-screen bg-neutral">
+      <body className="flex flex-col min-h-screen bg-base-100">
         <main className={dosis.className}>
-          <Header/>
+          <HeaderNew/>
           {children}
           <Analytics />
           <Footer/>

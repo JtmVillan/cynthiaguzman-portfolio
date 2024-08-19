@@ -1,7 +1,7 @@
 import { PostMetaData } from "../../../components/PostMetaData";
 const ProjectCard = (props: PostMetaData) => {
     return (
-        <div className="group rounded-xl shadow-lg bg-slate-100 hover:bg-slate-200 ease-in duration-300 max-w-md text-neutral-content flex flex-col justify-between">
+        <div className="group rounded-xl shadow-lg bg-neutral hover: ease-in duration-300 max-w-md text-neutral-content flex flex-col justify-between">
           <div>
             <img
                 aria-label={'Image of ${props.title}'}

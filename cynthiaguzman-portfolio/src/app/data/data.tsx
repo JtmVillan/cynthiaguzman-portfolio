@@ -2,13 +2,18 @@ export const aboutMeData = {
 	name: 'Cynthia Guzman',
 	title: 'A Mechanical Engineer specialized in Robotics and Controls',
 	body:
-		"I recently graduated from UC San Diego with an interest in mechanical design and robotics! During my time at UCSD, I've had the chance to work on various research projects and collaborate with and lead multidisciplinary teams. These experiences have enhanced my ability to think critically, solve complex problems, and work effectively in a team environment.",
-	body2:
-		'In my free time, you can find me crocheting at home or roller skating at my local skate park!',
+		" I'm an alumnus of UC San Diego with a strong interest in the medical device industry. My interest stems from my appreciation for the impact these devices have on patient care. The ability to develop products that can enhance the overall healthcare experience makes me feel excited and proud about the work I do.",
     image: 'https://i.imgur.com/gBAboXp.png',
 };
 
 export const experienceData = [
+    {
+        name: 'Tandem Diabetes Care',
+        role: 'Manufacturing Engineering Intern',
+        date: 'May 2024 - Aug 2024',
+        body: 'Investigated potential modes of failure for two automatic assembly line. Performed root cause analysis for failures at specific assembly line stations and explored potential solutions toenhance efficiency and performance. Revised engineering drawings and performed testing procedures for product verification including Performance Qualifications (PQs) and Operational Qualifications (OQs)',
+        link: "https://www.tandemdiabetes.com/"
+    },
     {
         name: 'Gravish Lab (UCSD)',
         role: 'Undergraduate Student Researcher',
@@ -65,7 +70,8 @@ export const skillData = [
 export const contactData = [
     {
         title: "Contact Me",
-        subheading: "New ideas, projects, or freelance",
-        body:"Thanks for visiting my site! If you have any questions or would like to collaborate, I would love to hear from you. Feel free to reach out using the form."
+        email: "Email:",
+        email_link: "cynthia.guzman1748@gmail.com",
+        linkedin: "LinkedIn"
     }
 ];
